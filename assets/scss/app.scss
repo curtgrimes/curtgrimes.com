@@ -1,0 +1,266 @@
+$headings-font-family: "DM Serif Text",
+serif;
+
+$theme-colors: ("primary": #2ada7d,
+  "secondary": #222,
+  "light": #e0e0e0);
+
+$body-bg: map-get($theme-colors, "primary");
+
+$enable-responsive-font-sizes: true;
+
+$font-size-base: 1.3rem;
+$font-weight-normal: 400 !default;
+$lead-font-weight: $font-weight-normal;
+
+$border-radius: 0.2rem;
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2.3;
+$input-btn-font-size: $font-size-base * 0.9;
+$link-color: #004dff;
+
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 1.5rem;
+
+$border-width: 2px;
+$border-color: #222;
+
+$font-family-sans-serif: "Nunito Sans",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+
+.font-sans-serif {
+  font-family: $font-family-sans-serif !important;
+}
+
+$badge-font-weight: $font-weight-normal;
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+// @import "node_Modules/bootstrap-vue/src/index.scss";
+
+$spacers: map-merge((6: $spacer * 6),
+  $spacers);
+
+// Optional
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/type";
+// @import "node_modules/bootstrap/scss/images";
+// @import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+// @import "node_modules/bootstrap/scss/tables";
+// @import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+// @import "node_modules/bootstrap/scss/dropdown";
+// @import "node_modules/bootstrap/scss/button-group";
+// @import "node_modules/bootstrap/scss/input-group";
+// @import "node_modules/bootstrap/scss/custom-forms";
+// @import "node_modules/bootstrap/scss/nav";
+// @import "node_modules/bootstrap/scss/navbar";
+// @import "node_modules/bootstrap/scss/card";
+// @import "node_modules/bootstrap/scss/breadcrumb";
+// @import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+// @import "node_modules/bootstrap/scss/jumbotron";
+// @import "node_modules/bootstrap/scss/alert";
+// @import "node_modules/bootstrap/scss/progress";
+// @import "node_modules/bootstrap/scss/media";
+// @import "node_modules/bootstrap/scss/list-group";
+// @import "node_modules/bootstrap/scss/close";
+// @import "node_modules/bootstrap/scss/toasts";
+// @import "node_modules/bootstrap/scss/modal";
+// @import "node_modules/bootstrap/scss/tooltip";
+// @import "node_modules/bootstrap/scss/popover";
+// @import "node_modules/bootstrap/scss/carousel";
+// @import "node_modules/bootstrap/scss/spinners";
+
+@import "node_modules/bootstrap/scss/print";
+
+@import "make-print-grid-columns.scss";
+@include make-print-grid-columns();
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+::selection {
+  background-color: map-get($theme-colors, "primary");
+}
+
+.badge {
+  font-style: italic;
+  padding: 0.4em 0.4em 0.3em 0.4em;
+}
+
+@include media-breakpoint-up(lg) {
+  .column-count-lg-2 {
+    column-count: 2;
+  }
+}
+
+.column-count-2 {
+  column-count: 2;
+}
+
+.column-gap-1 {
+  column-gap: 3rem;
+}
+
+.break-inside-avoid {
+  break-inside: avoid;
+}
+
+@include media-breakpoint-up(xl) {
+  .hero-header-row {
+    max-height: 35rem;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .hero-header-row h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-header-row .lead {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .rounded-xs-only-none {
+    border-radius: 0 !important;
+  }
+}
+
+.hero-header-row .col-headshot {
+  min-height: 3rem;
+}
+
+@include media-breakpoint-up(md) {
+  .col-hero-text {
+    z-index: 10;
+    top: -1.5rem;
+    min-height: 20rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .hero-header-row .col-headshot {
+    margin-left: 2rem;
+  }
+}
+
+.bg-resume {
+  background-color: #d1d1d2;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23a8a8a8' fill-opacity='0.45' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.resume {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2,
+  h3 {
+    font-family: $font-family-sans-serif;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-bottom: 1px solid map-get($theme-colors, "light");
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  p,
+  ul {
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .resume-dates,
+  .resume-location {
+    font-style: italic;
+    color: $text-muted;
+    font-size: 0.78rem;
+    margin-top: 0.25rem;
+    letter-spacing: -0.5px;
+  }
+
+  .resume-button {
+    opacity: 0.75;
+    transition: all 0.15s;
+  }
+
+  .resume-button:hover,
+  .resume-button:active,
+  .resume-button:focus {
+    opacity: 1;
+  }
+
+  @include media-breakpoint-only(xs) {
+    h1 {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+@media print {
+  .resume {
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .resume .resume-heading {
+    margin-top: 1.5rem !important;
+  }
+
+  .resume .resume-title-wrap {
+    margin: 0 0 1.5rem 0 !important;
+  }
+}
+
+/* Web Captioner */
+.bg-webcaptioner {
+  background-color: #ffe200;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  background-image: url("data:image/svg+xml,%3Csvg width='420' height='60' viewBox='0 0 70 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,5.1L10.8,0h9.9L0,9.9V5.1L0,5.1z M70,9.9L49.3,0h9.9L70,5.1V9.9L70,9.9z M10.8,10l21-10h6.4l21,10h-9.9L35,3.2L20.7,10H10.8L10.8,10z M31.8,10L35,8.5l3.2,1.5H31.8L31.8,10z' fill='%23ebd000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-position-x: center;
+}
+
+.bg-webcaptioner h2 {
+  font-family: "Cousine";
+  text-transform: uppercase;
+}
+
+.bg-webcaptioner ::selection {
+  background-color: #fff;
+}

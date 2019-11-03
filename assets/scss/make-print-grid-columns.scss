@@ -1,0 +1,68 @@
+@mixin make-print-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints, $name: "-pr") {
+  @media print {
+
+    // Common properties for all breakpoints
+    %grid-column-print {
+      position: relative;
+      width: 100%;
+      padding-right: $gutter / 2;
+      padding-left: $gutter / 2;
+    }
+
+    // Allow columns to stretch full width below their breakpoints
+    @for $i from 1 through $columns {
+      .col#{$name}-#{$i} {
+        @extend %grid-column-print;
+      }
+    }
+
+    .col#{$name},
+    .col#{$name}-auto {
+      @extend %grid-column-print;
+    }
+
+    // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+    .col#{$name} {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+
+    .col#{$name}-auto {
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%; // Reset earlier grid tiers
+    }
+
+    @for $i from 1 through $columns {
+      .col#{$name}-#{$i} {
+        @include make-col($i, $columns);
+      }
+    }
+
+    .order#{$name}-first {
+      order: -1;
+    }
+
+    .order#{$name}-last {
+      order: $columns + 1;
+    }
+
+    @for $i from 0 through $columns {
+      .order#{$name}-#{$i} {
+        order: $i;
+      }
+    }
+
+    // `$columns - 1` because offsetting by the width of an entire row isn't possible
+    @for $i from 0 through ($columns - 1) {
+      @if not ($i==0) {
+
+        // Avoid emitting useless .offset-0
+        .offset#{$name}-#{$i} {
+          @include make-col-offset($i, $columns);
+        }
+      }
+    }
+  }
+}

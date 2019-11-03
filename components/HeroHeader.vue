@@ -1,0 +1,42 @@
+<template>
+  <section class="container px-2 px-sm-auto">
+    <div class="row no-gutters hero-header-row justify-content-center">
+      <div
+        class="col-hero-text col-md-6 d-flex flex-column justify-content-center align-items-md-end text-center text-md-left my-4 mb-3 my-md-0"
+      >
+        <div class="d-md-inline-block">
+          <h1 class="text-white d-inline-block mr-auto">Curt Grimes</h1>
+          <div class="w-100"></div>
+          <p class="lead ml-md-1 mb-4 d-inline-block font-italic">
+            Web developer in
+            <span style="white-space:nowrap">northern Illinois</span>
+          </p>
+          <p class="ml-md-1 mb-0">
+            <nuxt-link to="/resume" class="btn btn-outline-secondary">Résumé</nuxt-link>
+            <a href="#contact" class="btn btn-link text-secondary px-3">
+              <span class="d-flex align-items-center">
+                <span class="flex-shrink-0">Contact Me</span>
+                <fa icon="chevron-right" fixed-width />
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div
+        class="col-9 col-md-5 col-headshot d-flex align-items-end justify-content-start ml-md-n3"
+        style="z-index:9"
+      >
+        <picture>
+          <source :srcset="require('~/assets/img/headshot.webp')" type="image/webp" />
+          <source :srcset="require('~/assets/img/headshot.png')" type="image/png" />
+          <img
+            :src="require('~/assets/img/headshot.png')"
+            class="img-fluid w-100"
+            alt="Profile picture of Curt Grimes"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+</template>
+
