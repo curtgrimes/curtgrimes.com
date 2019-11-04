@@ -1,72 +1,45 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        curtgrimes.com
-      </h1>
-      <h2 class="subtitle">
-        Curt Grimes portfolio website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <hero-header />
+    <div class="bg-light">
+      <div class="container">
+        <div class="row rounded bg-white position-relative" style="top:-3rem;z-index:11">
+          <div class="col-md-9 mx-auto lead p-5">
+            <p>
+              I am a full-stack web developer living in the northern Illinois area.
+              I work in
+              <em>JavaScript</em>,
+              <em>Node.js</em> and
+              <em>Vue</em>. My latest project is
+              <a href="#">Web Captioner</a>, a speech-to-text
+              service.
+            </p>
+            <p>
+              I am passionate about design that is intuitive and satisfying for my users. I think a lot
+              about using the right tool for the job and how to write software that is maintainable and robust.
+            </p>
+            <p class="mb-0">
+              I am currently a web developer and do marketing communications work at
+              <a
+                href="https://niu.edu"
+              >Northern Illinois University</a>.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import HeroHeader from "~/components/HeroHeader.vue";
 
 export default {
   components: {
-    Logo
+    HeroHeader
   }
-}
+};
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
