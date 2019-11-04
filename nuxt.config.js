@@ -1,58 +1,42 @@
 export default {
   head: {
-    title: process.env.npm_package_name || '',
-    meta: [{
-        charset: 'utf-8'
+    title: "Curt Grimes: Web Developer",
+    meta: [
+      {
+        charset: "utf-8"
       },
       {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
+        hid: "description",
+        name: "description",
+        content:
+          "Curt Grimes is a full-stack web developer from the northern Illinois area."
       }
     ],
-    link: [{
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
-    }]
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico"
+      }
+    ]
   },
   loading: false,
-  /*
-   ** Global CSS
-   */
   css: [
-    '@/assets/scss/app.scss',
-    '@fortawesome/fontawesome-svg-core/styles.css'
+    "@/assets/scss/app.scss",
+    "@fortawesome/fontawesome-svg-core/styles.css"
   ],
-  plugins: [
-    '~/plugins/fontawesome.js'
-  ],
-  /*
-   ** Nuxt.js dev-modules
-   */
+  plugins: ["~/plugins/fontawesome.js"],
   buildModules: [],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://bootstrap-vue.js.org
-    // ['bootstrap-vue/nuxt']
-  ],
-  // bootstrapVue: {
-  //   bootstrapCSS: false,
-  //   bootstrapVueCSS: false
-  // },
-  /*
-   ** Build configuration
-   */
+  modules: ["nuxt-purgecss"],
+  purgeCSS: {
+    mode: "postcss",
+    whitelistPatterns: [/^fa/, /svg-inline--fa/] // ignore Font Awesome classes
+  },
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {}
   }
-}
+};
