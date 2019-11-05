@@ -1,5 +1,10 @@
 {
   "version": 2,
+  "build": {
+    "env": {
+      "FONTAWESOME_NPM_AUTH_TOKEN": "@fontawesome_npm_auth_token"
+    }
+  },
   "builds": [
     {
       "src": "nuxt.config.js",

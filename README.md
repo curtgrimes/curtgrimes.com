@@ -1,22 +1,5 @@
-# curtgrimes.com
+## Deploying with Now
 
-> Curt Grimes portfolio website
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm run install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+1. `npm i -g now`
+1. Add the Font Awesome auth token from https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers:
+   `now secrets add FONTAWESOME_NPM_AUTH_TOKEN ***token here***`
