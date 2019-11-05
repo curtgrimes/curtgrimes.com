@@ -1,8 +1,10 @@
 export default {
   head: {
+    htmlAttrs: {
+      lang: 'en',
+    },
     title: "Curt Grimes: Web Developer",
-    meta: [
-      {
+    meta: [{
         charset: "utf-8"
       },
       {
@@ -12,16 +14,26 @@ export default {
       {
         hid: "description",
         name: "description",
-        content:
-          "Curt Grimes is a full-stack web developer from the northern Illinois area."
+        content: "Curt Grimes is a full-stack web developer from the northern Illinois area."
       }
     ],
-    link: [
-      {
+    link: [{
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon.ico"
-      }
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,.'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Cousine&display=swap&text=WEBCAPTIONER'
+      },
     ]
   },
   loading: false,
@@ -29,12 +41,25 @@ export default {
     "@/assets/scss/app.scss",
     "@fortawesome/fontawesome-svg-core/styles.css"
   ],
-  plugins: ["~/plugins/fontawesome.js"],
-  buildModules: [],
-  modules: ["nuxt-purgecss"],
+  plugins: [
+    "~/plugins/fontawesome.js",
+  ],
+  buildModules: [
+    // ['@nuxtjs/google-analytics', {
+    //   id: 'UA-12301-2'
+    // }],
+  ],
+  modules: [
+    "nuxt-purgecss",
+    "@bazzite/nuxt-optimized-images",
+  ],
   purgeCSS: {
     mode: "postcss",
-    whitelistPatterns: [/^fa/, /svg-inline--fa/] // ignore Font Awesome classes
+    whitelistPatterns: [/^fa-(?!rotate|spin|pull|flip)/, /svg-inline--fa/] // ignore Font Awesome classes
+  },
+  optimizedImages: {
+    optimizeImages: true,
+    // optimizeImagesInDev: true
   },
   build: {
     extend(config, ctx) {}

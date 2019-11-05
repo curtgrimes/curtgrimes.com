@@ -1,0 +1,156 @@
+$headings-font-family: "DM Serif Text",
+serif;
+
+$theme-colors: ("primary": #2ada7d,
+  "secondary": #222,
+  "light": #E0E0E0);
+
+$body-bg: map-get($theme-colors, "primary");
+
+$enable-responsive-font-sizes: true;
+
+$font-size-base: 1.3rem;
+$font-weight-normal: 400 !default;
+
+$border-radius: 0.2rem;
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2.3;
+$input-btn-font-size: $font-size-base * 0.9;
+$link-color: #004dff;
+
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 1.5rem;
+
+$border-width: 2px;
+$border-color: #222;
+
+$font-family-sans-serif: "Nunito Sans",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+
+$badge-font-weight: $font-weight-normal;
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+// @import "node_Modules/bootstrap-vue/src/index.scss";
+
+$spacers: map-merge((6: $spacer * 6), $spacers);
+
+// Optional
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/type";
+// @import "node_modules/bootstrap/scss/images";
+// @import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+// @import "node_modules/bootstrap/scss/tables";
+// @import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+// @import "node_modules/bootstrap/scss/dropdown";
+// @import "node_modules/bootstrap/scss/button-group";
+// @import "node_modules/bootstrap/scss/input-group";
+// @import "node_modules/bootstrap/scss/custom-forms";
+// @import "node_modules/bootstrap/scss/nav";
+// @import "node_modules/bootstrap/scss/navbar";
+// @import "node_modules/bootstrap/scss/card";
+// @import "node_modules/bootstrap/scss/breadcrumb";
+// @import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+// @import "node_modules/bootstrap/scss/jumbotron";
+// @import "node_modules/bootstrap/scss/alert";
+// @import "node_modules/bootstrap/scss/progress";
+// @import "node_modules/bootstrap/scss/media";
+// @import "node_modules/bootstrap/scss/list-group";
+// @import "node_modules/bootstrap/scss/close";
+// @import "node_modules/bootstrap/scss/toasts";
+// @import "node_modules/bootstrap/scss/modal";
+// @import "node_modules/bootstrap/scss/tooltip";
+// @import "node_modules/bootstrap/scss/popover";
+// @import "node_modules/bootstrap/scss/carousel";
+// @import "node_modules/bootstrap/scss/spinners";
+
+// @import "node_modules/bootstrap/scss/print";
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.badge {
+  font-style: italic;
+  padding: 0.4em 0.4em 0.3em 0.4em;
+}
+
+@include media-breakpoint-up(lg) {
+  .column-count-lg-2 {
+    column-count: 2;
+  }
+}
+
+.column-count-2 {
+  column-count: 2;
+}
+
+.column-gap-1 {
+  column-gap: 3rem;
+}
+
+.break-inside-avoid {
+  break-inside: avoid;
+}
+
+@include media-breakpoint-up(xl) {
+  .hero-header-row {
+    max-height: 35rem;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .hero-header-row h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-header-row .lead {
+    font-size: 1.2rem;
+  }
+}
+
+.hero-header-row .col-headshot {
+  min-height: 3rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .hero-header-row .col-headshot {
+    margin-left: 6rem;
+  }
+}
+
+
+/* Web Captioner */
+.bg-webcaptioner {
+  background-color: #ffe200;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  background-image: url("data:image/svg+xml,%3Csvg width='420' height='60' viewBox='0 0 70 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,5.1L10.8,0h9.9L0,9.9V5.1L0,5.1z M70,9.9L49.3,0h9.9L70,5.1V9.9L70,9.9z M10.8,10l21-10h6.4l21,10h-9.9L35,3.2L20.7,10H10.8L10.8,10z M31.8,10L35,8.5l3.2,1.5H31.8L31.8,10z' fill='%23ebd000' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-position-x: center;
+}
+
+.bg-webcaptioner h2 {
+  font-family: 'Cousine';
+  text-transform: uppercase;
+}
