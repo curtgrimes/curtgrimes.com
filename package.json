@@ -4,6 +4,9 @@
   "description": "Curt Grimes portfolio website",
   "author": "Curt Grimes",
   "private": true,
+  "engines": {
+    "node": "^10"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
