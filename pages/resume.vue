@@ -116,7 +116,7 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "Curt Grimes - Web Developer"
+          content: "Résumé - Curt Grimes - Web Developer"
         },
         {
           hid: "og:url",
