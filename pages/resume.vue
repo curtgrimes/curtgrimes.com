@@ -121,7 +121,7 @@ export default {
         {
           hid: "og:url",
           property: "og:url",
-          content: "https://curtgrimes.com"
+          content: "https://curtgrimes.com/resume"
         }
       ]
     };
