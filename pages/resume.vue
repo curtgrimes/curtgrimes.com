@@ -1,13 +1,22 @@
 <template>
   <div class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm my-lg-6 pt-4 px-lg-5 py-4">
+    <nuxt-link
+      to="/"
+      class="btn btn-link position-absolute text-secondary d-print-none resume-button"
+      style="left:0;top:0"
+      title="Print"
+      @click="print()"
+    >
+      <fa :icon="['far', 'arrow-left']" class="mr-2" />Home
+    </nuxt-link>
     <button
       type="button"
-      class="btn btn-link position-absolute text-secondary d-print-none"
+      class="btn btn-link position-absolute text-secondary d-print-none resume-button"
       style="right:0;top:0"
       title="Print"
       @click="print()"
     >
-      <fa :icon="['far', 'print']" />
+      <fa :icon="['far', 'print']" class="mr-2" />Print
     </button>
     <div class="col-pr-12 col-md-10 col-lg-12 mx-auto">
       <div class="my-4">

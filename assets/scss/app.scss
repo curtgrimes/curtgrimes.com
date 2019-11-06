@@ -186,6 +186,17 @@ $spacers: map-merge((6: $spacer * 6), $spacers);
     margin-top: 0.25rem;
     letter-spacing: -0.5px;
   }
+
+  .resume-button {
+    opacity: .5;
+    transition: all .15s;
+  }
+
+  .resume-button:hover,
+  .resume-button:active,
+  .resume-button:focus {
+    opacity: 1;
+  }
 }
 
 @media print {
