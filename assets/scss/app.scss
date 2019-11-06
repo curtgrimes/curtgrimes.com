@@ -83,7 +83,11 @@ $spacers: map-merge((6: $spacer * 6), $spacers);
 // @import "node_modules/bootstrap/scss/carousel";
 // @import "node_modules/bootstrap/scss/spinners";
 
-// @import "node_modules/bootstrap/scss/print";
+@import "node_modules/bootstrap/scss/print";
+
+@import "make-print-grid-columns.scss";
+@include make-print-grid-columns();
+
 
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -140,6 +144,60 @@ $spacers: map-merge((6: $spacer * 6), $spacers);
   }
 }
 
+.resume {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2,
+  h3 {
+    font-family: $font-family-sans-serif;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    border-bottom: 1px solid map-get($theme-colors, "light");
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  p,
+  ul {
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .resume-dates,
+  .resume-location {
+    font-style: italic;
+    color: $text-muted;
+    font-size: .78rem;
+    margin-top: 0.25rem;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media print {
+  .resume {
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .resume .mt-5 {
+    margin-top: 2rem !important;
+  }
+}
 
 /* Web Captioner */
 .bg-webcaptioner {

@@ -24,6 +24,7 @@ import {
   faCloud,
   faSparkles,
   faCommentSmile,
+  faPrint
 } from '@fortawesome/pro-regular-svg-icons'
 
 // This is important, we are going to let Nuxt.js worry about the CSS
@@ -44,7 +45,8 @@ library.add([
   faFacebookMessenger,
   faTwitterSquare,
   faEnvelope,
-  faEnvelopeSquare
+  faEnvelopeSquare,
+  faPrint
 ])
 
 // Register the component globally

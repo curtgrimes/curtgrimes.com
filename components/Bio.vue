@@ -12,7 +12,7 @@
             <em>JavaScript</em>,
             <em>Node.js</em> and
             <em>Vue</em>. My latest project is
-            <a href="#">Web Captioner</a>, a speech-to-text
+            <a href="#web-captioner">Web Captioner</a>, a speech-to-text
             service.
           </p>
           <p>

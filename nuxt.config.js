@@ -3,7 +3,7 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "Curt Grimes: Web Developer",
+    title: "Curt Grimes - Web Developer",
     meta: [{
         charset: "utf-8"
       },
@@ -15,12 +15,59 @@ export default {
         hid: "description",
         name: "description",
         content: "Curt Grimes is a full-stack web developer from the northern Illinois area."
+      },
+      {
+        name: "theme-color",
+        content: "#2ada7d"
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Curt Grimes - Web Developer"
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://curtgrimes.com"
+      },
+      {
+        property: "og:description",
+        content: "Curt Grimes is a full-stack web developer from the northern Illinois area."
+      },
+      {
+        property: "og:image",
+        content: "/og-image.jpg"
+      },
+      {
+        property: "og:type",
+        content: "website"
       }
     ],
     link: [{
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: "/apple-touch-icon.png"
+      },
+      {
         rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
+        type: "image/png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png"
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: "/favicon-16x16.png"
+      },
+      {
+        rel: "manifest",
+        href: "/site.webmanifest"
+      },
+      {
+        rel: "mask-icon",
+        href: "/safari-pinned-tab.svg",
+        color: "#2ada7d"
       },
       {
         rel: 'stylesheet',
@@ -45,9 +92,9 @@ export default {
     "~/plugins/fontawesome.js",
   ],
   buildModules: [
-    // ['@nuxtjs/google-analytics', {
-    //   id: 'UA-12301-2'
-    // }],
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-47023012-1'
+    }],
   ],
   modules: [
     "nuxt-purgecss",

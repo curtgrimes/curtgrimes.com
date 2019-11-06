@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-5">
+  <div id="web-captioner" class="container py-5">
     <div class="row position-relative align-items-center">
       <div class="col-lg-10">
         <div class="bg-webcaptioner p-4 py-5 px-sm-5">
