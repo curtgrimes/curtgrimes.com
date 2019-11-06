@@ -90,6 +90,10 @@ $spacers: map-merge(
   }
 }
 
+::selection {
+  background-color: map-get($theme-colors, "primary");
+}
+
 .badge {
   font-style: italic;
   padding: 0.4em 0.4em 0.3em 0.4em;
@@ -235,4 +239,8 @@ $spacers: map-merge(
 .bg-webcaptioner h2 {
   font-family: "Cousine";
   text-transform: uppercase;
+}
+
+.bg-webcaptioner ::selection {
+  background-color: #fff;
 }
