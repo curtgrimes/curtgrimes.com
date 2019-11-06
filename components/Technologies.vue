@@ -2,7 +2,7 @@
   <div class="container mb-5">
     <div class="row">
       <div class="col-md-4">
-        <h2 class="sticky-top">I've worked with...</h2>
+        <h2 class="sticky-top" style="top:1.5rem">I've worked with...</h2>
       </div>
       <div class="col-md-8 mt-3 column-count-lg-2 column-gap-1">
         <div

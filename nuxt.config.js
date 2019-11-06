@@ -51,15 +51,10 @@ export default {
   ],
   modules: [
     "nuxt-purgecss",
-    "@bazzite/nuxt-optimized-images",
   ],
   purgeCSS: {
     mode: "postcss",
     whitelistPatterns: [/^fa-(?!rotate|spin|pull|flip)/, /svg-inline--fa/] // ignore Font Awesome classes
-  },
-  optimizedImages: {
-    optimizeImages: true,
-    // optimizeImagesInDev: true
   },
   build: {
     extend(config, ctx) {}

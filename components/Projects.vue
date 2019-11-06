@@ -39,35 +39,37 @@
                 href="https://webcaptioner.com/testimonials/"
               >live streams and events</a> across the world.
             </p>
-            <p class="mb-0 lead d-flex">
+            <p class="mb-n3 lead d-flex flex-wrap" style="line-height:2rem">
               <a
                 href="https://webcaptioner.com"
-                class="btn btn-outline-secondary btn-sm mr-3"
+                class="btn btn-outline-secondary btn-sm mr-3 mb-3"
               >webcaptioner.com</a>
-              <a
-                href="https://facebook.com/webcaptioner"
-                class="text-secondary px-1 mx-1"
-                aria-label="Web Captioner on Facebook"
-                title="Web Captioner on Facebook"
-              >
-                <fa :icon="['fab','facebook-square']" fixed-width />
-              </a>
-              <a
-                href="https://www.messenger.com/t/webcaptioner"
-                class="text-secondary px-1 mx-1"
-                aria-label="Web Captioner on Facebook Messenger"
-                title="Web Captioner on Facebook Messenger"
-              >
-                <fa :icon="['fab','facebook-messenger']" fixed-width />
-              </a>
-              <a
-                href="https://twitter.com/webcaptioner"
-                class="text-secondary px-1 mx-1"
-                aria-label="Web Captioner on Twitter"
-                title="Web Captioner on Twitter"
-              >
-                <fa :icon="['fab','twitter-square']" fixed-width />
-              </a>
+              <span class="d-flex align-items-center mb-3">
+                <a
+                  href="https://facebook.com/webcaptioner"
+                  class="text-secondary px-1 mx-1"
+                  aria-label="Web Captioner on Facebook"
+                  title="Web Captioner on Facebook"
+                >
+                  <fa :icon="['fab','facebook-square']" fixed-width />
+                </a>
+                <a
+                  href="https://www.messenger.com/t/webcaptioner"
+                  class="text-secondary px-1 mx-1"
+                  aria-label="Web Captioner on Facebook Messenger"
+                  title="Web Captioner on Facebook Messenger"
+                >
+                  <fa :icon="['fab','facebook-messenger']" fixed-width />
+                </a>
+                <a
+                  href="https://twitter.com/webcaptioner"
+                  class="text-secondary px-1 mx-1"
+                  aria-label="Web Captioner on Twitter"
+                  title="Web Captioner on Twitter"
+                >
+                  <fa :icon="['fab','twitter-square']" fixed-width />
+                </a>
+              </span>
             </p>
           </div>
         </div>

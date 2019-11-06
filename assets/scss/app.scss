@@ -122,7 +122,7 @@ $spacers: map-merge((6: $spacer * 6), $spacers);
 
 @include media-breakpoint-only(md) {
   .hero-header-row h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 
   .hero-header-row .lead {
@@ -136,7 +136,7 @@ $spacers: map-merge((6: $spacer * 6), $spacers);
 
 @include media-breakpoint-down(sm) {
   .hero-header-row .col-headshot {
-    margin-left: 6rem;
+    margin-left: 2rem;
   }
 }
 
