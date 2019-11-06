@@ -1,11 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container px-2 px-sm-auto">
     <div class="row no-gutters hero-header-row justify-content-center">
       <div
-        class="col-md-6 d-flex flex-column justify-content-center align-items-md-end ml-md-3 text-center text-md-left mt-5 mb-3 my-md-0"
-        style="z-index:10;top:-1.5rem;min-height: 20rem;"
+        class="col-hero-text col-md-6 d-flex flex-column justify-content-center align-items-md-end text-center text-md-left my-4 mb-3 my-md-0"
       >
-        <div class="d-inline-block">
+        <div class="d-md-inline-block">
           <h1 class="text-white d-inline-block mr-auto">Curt Grimes</h1>
           <div class="w-100"></div>
           <p class="lead ml-md-1 mb-4 d-inline-block font-italic">Web developer in northern Illinois</p>
@@ -13,7 +12,7 @@
             <nuxt-link to="/resume" class="btn btn-outline-secondary">Résumé</nuxt-link>
             <a href="#contact" class="btn btn-link text-secondary">
               <span class="d-flex align-items-center">
-                Contact Me
+                <span class="flex-shrink-0">Contact Me</span>
                 <fa icon="chevron-right" fixed-width />
               </span>
             </a>
