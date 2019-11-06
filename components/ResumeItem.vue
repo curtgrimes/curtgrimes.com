@@ -1,14 +1,14 @@
 <template>
   <div class="row no-gutters mb-3">
     <div
-      class="col-pr-2 col-md-3 col-xl-2 small pr-4 d-flex d-md-block mb-2 mb-md-0 text-sm-right"
+      class="col-pr-2 col-md-3 col-xl-2 small pr-sm-4 d-flex d-md-block mb-2 mb-md-0 text-sm-right"
       v-if="$slots.dates || $slots.company || $slots.location"
     >
-      <span v-if="$slots.company">
+      <span v-if="$slots.company" class="resume-company">
         <slot name="company"></slot>
       </span>
       <span class="ml-auto d-md-block text-right" v-if="$slots.dates || $slots.location">
-        <span class="resume-dates d-md-block" v-if="$slots.dates">
+        <span class="resume-dates d-md-block pl-2 pl-sm-0" v-if="$slots.dates">
           <slot name="dates"></slot>
         </span>
         <span class="d-md-none text-muted" v-if="$slots.dates && $slots.location">&middot;</span>
