@@ -8,7 +8,7 @@
         <div
           v-for="(technology, index) in technologies"
           :key="index"
-          class="mb-4 mb-lg-5 break-inside-avoid"
+          class="pb-3 pb-lg-4 break-inside-avoid"
         >
           <h3 class="border-top pt-2 mb-4 mb-lg-3">
             <fa :icon="technology.icon" size="sm" fixed-width />

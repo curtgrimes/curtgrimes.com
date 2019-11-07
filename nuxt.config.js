@@ -69,18 +69,6 @@ export default {
         href: "/safari-pinned-tab.svg",
         color: "#2ada7d"
       },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Cousine&display=swap&text=WEBCAPTIONER'
-      },
     ]
   },
   loading: false,

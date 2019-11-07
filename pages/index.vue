@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <hero-header />
     <div class="bg-light">
       <bio />
@@ -8,7 +8,7 @@
       <projects />
       <contact />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
