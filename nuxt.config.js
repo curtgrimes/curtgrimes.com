@@ -75,7 +75,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,.'
+        href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap'
       },
       {
         rel: 'stylesheet',
