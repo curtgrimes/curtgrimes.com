@@ -115,8 +115,8 @@
 
 
 <script>
-import ResumeHeading from "~/components/ResumeHeading";
-import ResumeItem from "~/components/ResumeItem";
+const ResumeHeading = () => import("~/components/ResumeHeading");
+const ResumeItem = () => import("~/components/ResumeItem");
 
 export default {
   head() {
