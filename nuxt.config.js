@@ -1,18 +1,20 @@
 const BASE_URL = "https://curtgrimes.com";
 const SITE_NAME = "Curt Grimes - Web Developer - Northern Illinois";
 const SITE_NAME_SHORT = "Curt Grimes - Web Developer";
-const SITE_DESCRIPTION = "Curt Grimes is a full-stack web developer located in the northern Illinois area."
+const SITE_DESCRIPTION =
+  "Curt Grimes is a full-stack web developer located in the northern Illinois area.";
 
 export default {
   env: {
-    baseUrl: BASE_URL,
+    baseUrl: BASE_URL
   },
   head: {
     htmlAttrs: {
-      lang: 'en',
+      lang: "en"
     },
     title: SITE_NAME,
-    meta: [{
+    meta: [
+      {
         charset: "utf-8"
       },
       {
@@ -57,7 +59,7 @@ export default {
       },
       {
         name: "twitter:card",
-        content: 'summary'
+        content: "summary"
       },
       {
         name: "twitter:image",
@@ -73,29 +75,34 @@ export default {
       },
       {
         name: "twitter:site",
-        content: '@curtgrimes'
-      },
+        content: "@curtgrimes"
+      }
     ],
-    link: [{
+    link: [
+      {
         rel: "preconnect",
         href: "https://fonts.googleapis.com/",
         crossorigin: true
-      }, {
+      },
+      {
         rel: "preconnect",
         href: "https://fonts.gstatic.com/",
         crossorigin: true
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=DM+Serif+Text&text=.ABCFGIMSabcdehikmnorstuvw'
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=DM+Serif+Text&text=.ABCFGIMSabcdehikmnorstuvw"
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,.'
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,."
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Cousine&text=WEBCAPTIONER'
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Cousine&text=WEBCAPTIONER"
       },
       {
         rel: "apple-touch-icon",
@@ -122,7 +129,7 @@ export default {
         rel: "mask-icon",
         href: "/safari-pinned-tab.svg",
         color: "#2ada7d"
-      },
+      }
     ]
   },
   loading: false,
@@ -130,25 +137,30 @@ export default {
     "@/assets/scss/app.scss",
     "@fortawesome/fontawesome-svg-core/styles.css"
   ],
-  plugins: [
-    "~/plugins/fontawesome.js",
-  ],
+  plugins: ["~/plugins/fontawesome.js"],
   buildModules: [
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-47023012-1'
-    }],
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: "UA-47023012-1"
+      }
+    ]
   ],
   modules: [
     "nuxt-purgecss",
     "@nuxtjs/robots",
-    "@nuxtjs/sitemap", // always include last
+    "@nuxtjs/sitemap" // always include last
   ],
   purgeCSS: {
     mode: "postcss",
-    whitelistPatterns: [/^fa-(?!rotate|spin|pull|flip|pulse|stack|primary|secondary|layers)/, /svg-inline--fa/] // ignore Font Awesome classes
+    whitelistPatterns: [
+      // Whitelist only Font Awesome classes that are used
+      /^fa-(?!rotate|spin|pull|flip|pulse|stack|primary|secondary|layers)/,
+      /svg-inline--fa/
+    ]
   },
   robots: {
-    sitemap: BASE_URL + '/sitemap.xml'
+    sitemap: BASE_URL + "/sitemap.xml"
   },
   build: {
     extend(config, ctx) {}
