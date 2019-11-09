@@ -98,6 +98,7 @@ export default {
   ],
   modules: [
     "nuxt-purgecss",
+    "@nuxtjs/sitemap", // always include last
   ],
   purgeCSS: {
     mode: "postcss",
