@@ -41,7 +41,7 @@
           >
             <slot name="location"></slot>
           </span>
-          <span class="d-md-none align-top" v-if="$slots.dates && $slots.location">&middot;</span>
+          <span class="d-md-none" v-if="$slots.dates && $slots.location">&middot;</span>
           <span class="resume-dates d-md-block" v-if="$slots.dates">
             <slot name="dates"></slot>
           </span>

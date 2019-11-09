@@ -1,0 +1,53 @@
+https://keybase.io/curtgrimes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://curtgrimes.com
+  * I am curtgrimes (https://keybase.io/curtgrimes) on keybase.
+  * I have a public key ASD5QWImkrdlI9pnNgyNkOJFmXjfGDSGh4m0HnDgkRecFQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101043fc5a72bd26b9810c11b37666b0ec172be1a4d583cb4096e58e2e79bca6c340a",
+      "host": "keybase.io",
+      "kid": "0120f941622692b76523da67360c8d90e2459978df1834868789b41e70e091179c150a",
+      "uid": "e146f38e051d0f2e5f84ad28dbd97819",
+      "username": "curtgrimes"
+    },
+    "merkle_root": {
+      "ctime": 1573327344,
+      "hash": "1ce4405cb1a2349c32fb9acb21cbd9e4089a0d611de18d8c84d98069d11e9c5e535acbccc1a1351fbdf5e8ce9034a1627bffbe0234e1710891f262e4b4080249",
+      "hash_meta": "9af95b51c082dfb823afbd21d527f393ba064803936c084bd6dcd8f1c32bc98e",
+      "seqno": 9032316
+    },
+    "service": {
+      "entropy": "0mABGFLS7RPjrYag5u0nQKli",
+      "hostname": "curtgrimes.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.7.2"
+  },
+  "ctime": 1573327357,
+  "expire_in": 504576000,
+  "prev": "0c9fc77c6a08947b495d2f9f4a0e7092dbb8552ddda2a8c7a7997bdc7dc08c1d",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg+UFiJpK3ZSPaZzYMjZDiRZl43xg0hoeJtB5w4JEXnBUKp3BheWxvYWTESpcCDcQgDJ/HfGoIlHtJXS+fSg5wktu4VS3doqjHp5l73H3AjB3EIBnqLpm3h7ZWIth0uTAJToSfX3zAwxnAN55p5plgLFliAgHCo3NpZ8RANaT7AblZuCMfpk1LKXWv1qDYINJA5PCLNKiobbgXnMlPAyrrh6wFhn1dslUCN2LGHB4fkO794EF1Hax7hx/0BqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAK49XGKR9v/hXlXTm4SccZGQPQqadOsBzY16JESElL2o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/curtgrimes
