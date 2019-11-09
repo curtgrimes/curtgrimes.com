@@ -2,7 +2,7 @@
   <section class="mb-5">
     <div class="container">
       <div
-        class="row rounded bg-white position-relative"
+        class="row rounded rounded-xs-only-none rounded bg-white position-relative"
         style="top:-3rem;margin-bottom:-3rem;z-index:11"
       >
         <div class="col-md-9 mx-auto lead p-4 p-sm-5">

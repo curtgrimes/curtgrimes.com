@@ -143,6 +143,12 @@ $spacers: map-merge((6: $spacer * 6),
   }
 }
 
+@include media-breakpoint-only(xs) {
+  .rounded-xs-only-none {
+    border-radius: 0 !important;
+  }
+}
+
 .hero-header-row .col-headshot {
   min-height: 3rem;
 }
