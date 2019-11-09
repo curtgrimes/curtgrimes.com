@@ -1,3 +1,5 @@
+const BASE_URL = 'https://curtgrimes.com'
+
 export default {
   head: {
     htmlAttrs: {
@@ -9,7 +11,7 @@ export default {
       },
       {
         name: "viewport",
-        content: "width=device-width, initial-scale=1"
+        content: "width=device-width, initial-scale=1, shrink-to-fit=no"
       },
       {
         hid: "description",
@@ -28,7 +30,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "https://curtgrimes.com"
+        content: BASE_URL
       },
       {
         property: "og:description",
@@ -36,7 +38,7 @@ export default {
       },
       {
         property: "og:image",
-        content: "/og-image.jpg"
+        content: BASE_URL + "/og-image.jpg"
       },
       {
         property: "og:type",
@@ -104,6 +106,9 @@ export default {
   purgeCSS: {
     mode: "postcss",
     whitelistPatterns: [/^fa-(?!rotate|spin|pull|flip)/, /svg-inline--fa/] // ignore Font Awesome classes
+  },
+  robots: {
+    sitemap: BASE_URL + '/sitemap.xml'
   },
   build: {
     extend(config, ctx) {}
