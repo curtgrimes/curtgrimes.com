@@ -26,7 +26,11 @@
         <picture>
           <source :srcset="require('~/assets/img/headshot.webp')" type="image/webp" />
           <source :srcset="require('~/assets/img/headshot.png')" type="image/png" />
-          <img :src="require('~/assets/img/headshot.png')" class="img-fluid w-100" alt />
+          <img
+            :src="require('~/assets/img/headshot.png')"
+            class="img-fluid w-100"
+            alt="Profile picture of Curt Grimes"
+          />
         </picture>
       </div>
     </div>
