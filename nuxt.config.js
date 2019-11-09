@@ -14,7 +14,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Curt Grimes is a full-stack web developer from the northern Illinois area."
+        content: "Curt Grimes is a full-stack web developer located in the northern Illinois area."
       },
       {
         name: "theme-color",
@@ -98,6 +98,7 @@ export default {
   ],
   modules: [
     "nuxt-purgecss",
+    "@nuxtjs/robots",
     "@nuxtjs/sitemap", // always include last
   ],
   purgeCSS: {
