@@ -122,9 +122,6 @@ export default {
   head() {
     return {
       title: "Résumé - Curt Grimes - Web Developer",
-      bodyAttrs: {
-        class: "bg-white"
-      },
       meta: [
         {
           hid: "og:title",

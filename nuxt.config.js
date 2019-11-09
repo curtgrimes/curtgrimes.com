@@ -4,6 +4,9 @@ const SITE_NAME_SHORT = "Curt Grimes - Web Developer";
 const SITE_DESCRIPTION = "Curt Grimes is a full-stack web developer located in the northern Illinois area."
 
 export default {
+  env: {
+    baseUrl: BASE_URL,
+  },
   head: {
     htmlAttrs: {
       lang: 'en',
