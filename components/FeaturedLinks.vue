@@ -20,26 +20,24 @@
 
 <script>
 export default {
-  data() {
-    return {
-      links: [
-        {
-          name: "GitHub",
-          url: "https://github.com/curtgrimes",
-          icon: ["fab", "github"]
-        },
-        {
-          name: "LinkedIn",
-          url: "https://linkedin.com/in/curtgrimes",
-          icon: ["fab", "linkedin-in"]
-        },
-        {
-          name: "Contact Me",
-          url: "#contact",
-          icon: ["fas", "paper-plane"]
-        }
-      ]
-    };
+  created() {
+    this.links = [
+      {
+        name: "GitHub",
+        url: "https://github.com/curtgrimes",
+        icon: ["fab", "github"]
+      },
+      {
+        name: "LinkedIn",
+        url: "https://linkedin.com/in/curtgrimes",
+        icon: ["fab", "linkedin-in"]
+      },
+      {
+        name: "Contact Me",
+        url: "#contact",
+        icon: ["fas", "paper-plane"]
+      }
+    ];
   }
 };
 </script>
