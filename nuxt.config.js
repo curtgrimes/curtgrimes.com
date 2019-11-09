@@ -145,7 +145,7 @@ export default {
   ],
   purgeCSS: {
     mode: "postcss",
-    whitelistPatterns: [/^fa-(?!rotate|spin|pull|flip)/, /svg-inline--fa/] // ignore Font Awesome classes
+    whitelistPatterns: [/^fa-(?!rotate|spin|pull|flip|pulse|stack|primary|secondary|layers)/, /svg-inline--fa/] // ignore Font Awesome classes
   },
   robots: {
     sitemap: BASE_URL + '/sitemap.xml'
