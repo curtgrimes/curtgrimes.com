@@ -7,13 +7,17 @@
       <span v-if="$slots.company" class="font-italic">
         <slot name="company"></slot>
       </span>
-      <span class="ml-auto d-md-block text-right" v-if="$slots.dates || $slots.location">
-        <span class="resume-dates d-md-block pl-2 pl-sm-0" v-if="$slots.dates">
-          <slot name="dates"></slot>
-        </span>
-        <span class="d-md-none text-muted" v-if="$slots.dates && $slots.location">&middot;</span>
-        <span class="resume-location d-md-block" style="white-space:nowrap" v-if="$slots.location">
+      <span class="ml-auto d-md-block text-right text-muted" v-if="$slots.dates || $slots.location">
+        <span
+          class="resume-location d-md-block pl-2 pl-sm-0"
+          style="white-space:nowrap"
+          v-if="$slots.location"
+        >
           <slot name="location"></slot>
+        </span>
+        <span class="d-md-none align-top" v-if="$slots.dates && $slots.location">&middot;</span>
+        <span class="resume-dates d-md-block" v-if="$slots.dates">
+          <slot name="dates"></slot>
         </span>
       </span>
     </div>
@@ -26,17 +30,20 @@
           <slot name="company"></slot>
         </span>
         <span class="d-block d-sm-none w-100"></span>
-        <span class="ml-sm-auto d-md-block text-sm-right" v-if="$slots.dates || $slots.location">
-          <span class="resume-dates d-md-block" v-if="$slots.dates">
-            <slot name="dates"></slot>
-          </span>
-          <span class="d-md-none text-muted" v-if="$slots.dates && $slots.location">&middot;</span>
+        <span
+          class="ml-sm-auto d-md-block text-sm-right text-muted"
+          v-if="$slots.dates || $slots.location"
+        >
           <span
             class="resume-location d-md-block"
             style="white-space:nowrap"
             v-if="$slots.location"
           >
             <slot name="location"></slot>
+          </span>
+          <span class="d-md-none align-top" v-if="$slots.dates && $slots.location">&middot;</span>
+          <span class="resume-dates d-md-block" v-if="$slots.dates">
+            <slot name="dates"></slot>
           </span>
         </span>
       </div>
