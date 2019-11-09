@@ -44,6 +44,18 @@ export default {
       }
     ],
     link: [{
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,.'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Cousine&display=swap&text=WEBCAPTIONER'
+      },
+      {
         rel: "apple-touch-icon",
         sizes: "180x180",
         href: "/apple-touch-icon.png"
