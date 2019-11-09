@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-2 px-sm-auto">
+  <section class="container px-2 px-sm-auto">
     <div class="row no-gutters hero-header-row justify-content-center">
       <div
         class="col-hero-text col-md-6 d-flex flex-column justify-content-center align-items-md-end text-center text-md-left my-4 mb-3 my-md-0"
@@ -30,6 +30,6 @@
         </picture>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 

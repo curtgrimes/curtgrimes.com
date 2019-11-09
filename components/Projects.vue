@@ -1,5 +1,5 @@
 <template>
-  <div id="web-captioner" class="container py-5">
+  <section id="web-captioner" class="container py-5">
     <div class="row position-relative align-items-center">
       <div class="col-lg-10">
         <div class="bg-webcaptioner p-4 py-5 px-sm-5">
@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-xl-5 position-absolute pb-3 d-none d-lg-block" style="right:0">
-        <a href="https://webcaptioner.com">
+        <a href="https://webcaptioner.com" aria-label="Visit webcaptioner.com">
           <video
             loading="lazy"
             autoplay
@@ -84,13 +84,14 @@
             loop
             :poster="require('~/assets/img/web-captioner-poster.png')"
             class="w-100 shadow border rounded bg-secondary"
+            tabindex="-1"
           >
             <source data-src="/video/web-captioner-loop.mp4" type="video/mp4" />
           </video>
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

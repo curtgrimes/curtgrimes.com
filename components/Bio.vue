@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5">
+  <section class="mb-5">
     <div class="container">
       <div
         class="row rounded bg-white position-relative"
@@ -28,5 +28,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

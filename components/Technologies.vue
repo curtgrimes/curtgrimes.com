@@ -1,5 +1,5 @@
 <template>
-  <div class="container mb-5">
+  <section class="container mb-5">
     <div class="row">
       <div class="col-md-4">
         <h2 class="sticky-top" style="top:1.5rem">I've worked with...</h2>
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
