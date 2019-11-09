@@ -6,6 +6,16 @@
 
 <script>
 export default {
+  head() {
+    return {
+      link: [
+        {
+          rel: "canonical",
+          href: process.env.baseUrl + this.$route.path
+        }
+      ]
+    };
+  },
   mounted() {
     // Workaround a Safari rendering bug when using Google fonts with specific characters specified.
     // This causes the whole font to load again with all of the characters -- not quite performant
