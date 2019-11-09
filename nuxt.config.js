@@ -5,7 +5,7 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "Curt Grimes - Web Developer",
+    title: "Curt Grimes - Web Developer - Northern Illinois area",
     meta: [{
         charset: "utf-8"
       },
