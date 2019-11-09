@@ -1,11 +1,14 @@
-const BASE_URL = 'https://curtgrimes.com'
+const BASE_URL = "https://curtgrimes.com";
+const SITE_NAME = "Curt Grimes - Web Developer - Northern Illinois";
+const SITE_NAME_SHORT = "Curt Grimes - Web Developer";
+const SITE_DESCRIPTION = "Curt Grimes is a full-stack web developer located in the northern Illinois area."
 
 export default {
   head: {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "Curt Grimes - Web Developer - Northern Illinois area",
+    title: SITE_NAME,
     meta: [{
         charset: "utf-8"
       },
@@ -16,7 +19,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Curt Grimes is a full-stack web developer located in the northern Illinois area."
+        content: SITE_DESCRIPTION
       },
       {
         name: "theme-color",
@@ -25,7 +28,12 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Curt Grimes - Web Developer"
+        content: SITE_NAME_SHORT
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: SITE_NAME_SHORT
       },
       {
         hid: "og:url",
@@ -34,7 +42,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Curt Grimes is a full-stack web developer from the northern Illinois area."
+        content: SITE_DESCRIPTION
       },
       {
         property: "og:image",
@@ -43,7 +51,27 @@ export default {
       {
         property: "og:type",
         content: "website"
-      }
+      },
+      {
+        name: "twitter:card",
+        content: 'summary'
+      },
+      {
+        name: "twitter:image",
+        content: BASE_URL + "/og-image.jpg"
+      },
+      {
+        name: "twitter:title",
+        content: SITE_NAME_SHORT
+      },
+      {
+        name: "twitter:description",
+        content: SITE_DESCRIPTION
+      },
+      {
+        name: "twitter:site",
+        content: '@curtgrimes'
+      },
     ],
     link: [{
         rel: "preconnect",
