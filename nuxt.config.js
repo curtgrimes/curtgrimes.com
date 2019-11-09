@@ -46,6 +46,15 @@ export default {
       }
     ],
     link: [{
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com/",
+        crossorigin: true
+      }, {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com/",
+        crossorigin: true
+      },
+      {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=DM+Serif+Text&text=.ABCFGIMSabcdehikmnorstuvw'
       },
