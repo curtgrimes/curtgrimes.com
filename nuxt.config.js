@@ -88,6 +88,11 @@ export default {
         crossorigin: true
       },
       {
+        rel: "preconnect",
+        href: "https://www.google-analytics.com/",
+        crossorigin: true
+      },
+      {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw'
       },
