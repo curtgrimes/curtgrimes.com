@@ -123,7 +123,7 @@ export default {
     return {
       title: "Résumé - Curt Grimes - Web Developer",
       bodyAttrs: {
-        class: "bg-white"
+        class: "bg-light"
       },
       meta: [
         {
