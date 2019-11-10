@@ -92,19 +92,24 @@
         <resume-item>
           <ul class="list-unstyled">
             <li class="mb-2">
-              <strong>Web Development:</strong> HTML, JavaScript, CSS, Vue.js, Nuxt.js, SCSS, Bootstrap, jQuery, Hugo (static site generator), Responsive web design, Web accessibility, Browser extensions and userscripts, Node.js, Express, PHP, MySQL, MS SQL, Docker, Redis, WebSockets
+              <strong>Frontend:</strong>
+              {{getSkillsList('Frontend')}}
             </li>
             <li class="mb-2">
-              <strong>Tools and Services:</strong> Git, Amazon Web Services, Firebase, Azure Bot Service, GitLab API, Dropbox API, Microsoft Graph API, Web Speech API, WordPress, MediaWiki, Stripe
+              <strong>Backend:</strong>
+              {{getSkillsList('Backend')}}
             </li>
             <li class="mb-2">
-              <strong>Marketing:</strong> Google Analytics, search engine optimization, social network presence building (Facebook, Twitter, YouTube)
+              <strong>Services:</strong>
+              {{getSkillsList('Services')}}
             </li>
             <li class="mb-2">
-              <strong>Microsoft Office Suite:</strong> Word, PowerPoint, Excel
+              <strong>Marketing:</strong>
+              {{getSkillsList('Marketing')}}
             </li>
             <li class="mb-2">
-              <strong>Design:</strong> Adobe Illustrator, GIMP, Paint.NET
+              <strong>Design:</strong>
+              {{getSkillsList('Design')}}
             </li>
           </ul>
         </resume-item>
@@ -117,6 +122,7 @@
 <script>
 import ResumeHeading from "~/components/ResumeHeading";
 import ResumeItem from "~/components/ResumeItem";
+import skills from "~/data/skills";
 
 export default {
   head() {
@@ -146,6 +152,9 @@ export default {
   methods: {
     print() {
       window.print();
+    },
+    getSkillsList(groupName) {
+      return skills.find(g => g.name === groupName).examples.join(", ");
     }
   }
 };
