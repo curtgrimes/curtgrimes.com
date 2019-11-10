@@ -11,7 +11,7 @@
           class="pb-3 pb-lg-4 break-inside-avoid"
         >
           <h3 class="border-top pt-2 mb-4 mb-lg-3">
-            <fa :icon="technology.icon" size="sm" fixed-width />
+            <fa v-if="technology.icon" :icon="technology.icon" size="sm" fixed-width />
             {{technology.name}}
           </h3>
           <ul class="list-unstyled font-italic column-count-2" style="line-height: 1.8rem">
@@ -27,73 +27,11 @@
 </template>
 
 <script>
+import skills from "~/data/skills";
+
 export default {
   created() {
-    this.technologies = [
-      {
-        name: "Frontend",
-        icon: ["far", "window-alt"],
-        examples: [
-          "HTML",
-          "JavaScript",
-          "CSS",
-          "Vue.js",
-          "Nuxt.js",
-          "SCSS",
-          "Bootstrap",
-          "jQuery",
-          "Hugo (static site generator)",
-          "Responsive web design",
-          "Web accessibility",
-          "Browser extensions and userscripts"
-        ]
-      },
-      {
-        name: "Backend",
-        icon: ["far", "cloud"],
-        examples: [
-          "Node.js",
-          "Express",
-          "PHP",
-          "MySQL",
-          "MS SQL",
-          "Docker",
-          "Redis",
-          "WebSockets"
-        ]
-      },
-      {
-        name: "Services",
-        icon: ["far", "sparkles"],
-        examples: [
-          "Amazon Web Services",
-          "Firebase",
-          "Azure Bot Service",
-          "GitLab API",
-          "Dropbox API",
-          "Microsoft Graph API",
-          "Web Speech API",
-          "WordPress",
-          "MediaWiki",
-          "Stripe"
-        ]
-      },
-      {
-        name: "Ask me about",
-        icon: ["far", "comment-smile"],
-        examples: [
-          {
-            name: "Stream Deck",
-            url: "https://www.elgato.com/en/gaming/stream-deck"
-          },
-          {
-            name: "Home Assistant",
-            url: "https://www.home-assistant.io/"
-          },
-          "Google Glass"
-        ]
-      }
-    ];
+    this.technologies = skills.filter(s => s.includeInPorfolioSkills);
   }
 };
 </script>
