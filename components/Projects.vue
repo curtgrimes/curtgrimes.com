@@ -6,7 +6,6 @@
           <div class="bg-webcaptioner p-4 py-5 px-sm-5">
             <div class="col-lg-7 col-xl-8">
               <h2>Web Captioner</h2>
-              <p>Technologies used in Web Captioner:</p>
               <ul class="list-inline small d-block mb-3">
                 <li
                   v-for="(technology, index) in ['Node.js', 'Nuxt.js', 'Vue.js', 'Web Speech API', 'Bootstrap', 'Docker', 'AWS Fargate']"
