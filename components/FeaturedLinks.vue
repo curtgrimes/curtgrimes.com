@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-primary">
+  <section>
     <div class="container">
       <div class="row justify-content-center text-center py-3 py-sm-5">
         <div v-for="(link, index) in links" :key="index" class="col-sm-4 col-md-3 px-sm-3">

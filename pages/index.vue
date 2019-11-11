@@ -1,13 +1,11 @@
 <template>
   <main>
     <hero-header />
-    <div class="bg-light">
-      <bio />
-      <technologies />
-      <featured-links />
-      <projects />
-      <contact />
-    </div>
+    <bio />
+    <technologies />
+    <featured-links />
+    <projects />
+    <contact />
   </main>
 </template>
 

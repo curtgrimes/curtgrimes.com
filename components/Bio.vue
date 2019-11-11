@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-5">
+  <section class="mb-5 bg-light">
     <div class="container">
       <div
         class="row rounded rounded-xs-only-none rounded bg-white position-relative"
