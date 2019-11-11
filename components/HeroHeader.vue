@@ -33,6 +33,7 @@
             :src="require('~/assets/img/headshot.png')"
             class="img-fluid w-100"
             alt="Profile picture of Curt Grimes"
+            style="pointer-events:none"
           />
         </picture>
       </div>
