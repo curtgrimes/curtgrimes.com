@@ -1,5 +1,5 @@
 <template>
-  <section class="container px-2 px-sm-auto">
+  <div class="container px-2 px-sm-auto">
     <div class="row no-gutters hero-header-row justify-content-center">
       <div
         class="col-hero-text col-md-6 d-flex flex-column justify-content-center align-items-md-end text-center text-md-left my-4 mb-3 my-md-0"
@@ -11,7 +11,7 @@
             Web developer in
             <span style="white-space:nowrap">northern Illinois</span>
           </p>
-          <p class="ml-md-1 mb-0">
+          <nav class="ml-md-1 mb-0">
             <nuxt-link to="/resume" class="btn btn-outline-secondary">Résumé</nuxt-link>
             <a href="#contact" class="btn btn-link text-secondary px-3">
               <span class="d-flex align-items-center">
@@ -19,7 +19,7 @@
                 <fa icon="chevron-right" fixed-width />
               </span>
             </a>
-          </p>
+          </nav>
         </div>
       </div>
       <div
@@ -37,6 +37,6 @@
         </picture>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 

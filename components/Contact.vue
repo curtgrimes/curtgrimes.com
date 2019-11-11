@@ -1,5 +1,5 @@
 <template>
-  <footer id="contact" class="bg-primary">
+  <footer id="contact">
     <div class="container py-6">
       <div class="col-md-11 col-lg-9 mx-auto">
         <div class="row">
