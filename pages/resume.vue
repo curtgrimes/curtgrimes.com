@@ -3,7 +3,7 @@
     <div class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm px-lg-5 py-4">
       <nuxt-link
         to="/"
-        class="btn btn-link position-absolute text-secondary d-print-none resume-button"
+        class="btn btn-link position-absolute text-secondary d-print-none resume-button px-4 py-3"
         style="left:0;top:0"
         title="Print"
         @click="print()"
@@ -12,7 +12,7 @@
       </nuxt-link>
       <button
         type="button"
-        class="btn btn-link position-absolute text-secondary d-print-none resume-button"
+        class="btn btn-link position-absolute text-secondary d-print-none resume-button px-4 py-3"
         style="right:0;top:0"
         title="Print"
         @click="print()"
