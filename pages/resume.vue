@@ -5,8 +5,6 @@
         to="/"
         class="btn btn-link position-absolute text-secondary d-print-none resume-button px-4 py-3"
         style="left:0;top:0"
-        title="Print"
-        @click="print()"
       >
         <fa :icon="['far', 'arrow-left']" class="mr-2" />Home
       </nuxt-link>
@@ -14,7 +12,6 @@
         type="button"
         class="btn btn-link position-absolute text-secondary d-print-none resume-button px-4 py-3"
         style="right:0;top:0"
-        title="Print"
         @click="print()"
       >
         <fa :icon="['far', 'print']" class="mr-2" />Print
