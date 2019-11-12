@@ -22,18 +22,18 @@
           </nav>
         </div>
       </div>
-      <div
-        class="col-9 col-md-5 col-headshot d-flex align-items-end justify-content-start ml-md-n3"
-        style="z-index:9"
-      >
-        <picture>
+      <div class="col-9 col-md-5 col-headshot ml-md-n3" style="z-index:9">
+        <!-- Use placeholder wrapper for image to preserve aspect ratio
+        before image loads to prevent content shifting around as image loads. 
+        Padding top is height / width * 100% of image.-->
+        <picture class="d-block position-relative h-0" style="padding-top: calc(956 / 900 * 100%)">
           <source :srcset="require('~/assets/img/headshot.webp')" type="image/webp" />
           <source :srcset="require('~/assets/img/headshot.png')" type="image/png" />
           <img
             :src="require('~/assets/img/headshot.png')"
-            class="img-fluid w-100"
+            class="position-absolute w-100 h-100"
             alt="Profile picture of Curt Grimes"
-            style="pointer-events:none"
+            style="pointer-events:none;top:0;left:0"
           />
         </picture>
       </div>
