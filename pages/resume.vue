@@ -157,7 +157,7 @@ export default {
       window.print();
     },
     getSkillsList(groupName) {
-      return skills.find(g => g.name === groupName).examples.join(", ");
+      return skills.find(g => g.name === groupName).examples.map(e => e.name).join(", ");
     }
   }
 };
