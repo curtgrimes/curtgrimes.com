@@ -138,6 +138,12 @@ export default {
           hid: "og:url",
           property: "og:url",
           content: "https://curtgrimes.com/resume"
+        },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "The résumé for Curt Grimes, a full-stack web developer located in the northern Illinois area."
         }
       ]
     };
