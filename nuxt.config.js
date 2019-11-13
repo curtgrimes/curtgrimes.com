@@ -163,7 +163,7 @@ export default {
     sitemap: BASE_URL + "/sitemap.xml"
   },
   serverMiddleware: [
-    '~/server-middleware/redirects.js'
+    "~/server-middleware/redirects.js"
   ],
   build: {
     extend(config, ctx) {}

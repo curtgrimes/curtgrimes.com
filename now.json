@@ -10,7 +10,10 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/now-builder",
       "config": {
-        "serverFiles": ["./.nuxt/dist/sitemap-routes.json"]
+        "serverFiles": [
+          "./.nuxt/dist/sitemap-routes.json",
+          "./server-middleware/**"
+        ]
       }
     }
   ]
