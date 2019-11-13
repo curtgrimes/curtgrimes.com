@@ -8,10 +8,20 @@
               <h2>Web Captioner</h2>
               <ul class="list-inline small d-block mb-3">
                 <li
-                  v-for="(technology, index) in ['Node.js', 'Nuxt.js', 'Vue.js', 'Web Speech API', 'Bootstrap', 'Docker', 'AWS Fargate']"
+                  v-for="(technology, index) in [
+                    'Node.js',
+                    'Nuxt.js',
+                    'Vue.js',
+                    'Web Speech API',
+                    'Bootstrap',
+                    'Docker',
+                    'AWS Fargate'
+                  ]"
                   class="badge badge-light border mr-1 mb-1"
                   :key="index"
-                >{{technology}}</li>
+                >
+                  {{ technology }}
+                </li>
               </ul>
               <div class="col-md-9 p-0 mb-1 d-lg-none">
                 <video
@@ -23,26 +33,32 @@
                   :poster="require('~/assets/img/web-captioner-poster.png')"
                   class="w-100 border rounded bg-secondary"
                 >
-                  <source data-src="/video/web-captioner-loop.mp4" type="video/mp4" />
+                  <source
+                    data-src="/video/web-captioner-loop.mp4"
+                    type="video/mp4"
+                  />
                 </video>
               </div>
               <p>
                 One of my current projects,
                 <a href="https://webcaptioner.com">Web Captioner</a>, is a
-                web-based speech-to-text service. With Web Captioner, my goal has been to make
-                it so easy to add captions to an event or live stream that there is simply no reason not to.
+                web-based speech-to-text service. With Web Captioner, my goal
+                has been to make it so easy to add captions to an event or live
+                stream that there is simply no reason not to.
               </p>
               <p>
                 Web Captioner is used in
-                <a
-                  href="https://webcaptioner.com/testimonials/"
-                >live streams and events</a> across the world.
+                <a href="https://webcaptioner.com/testimonials/"
+                  >live streams and events</a
+                >
+                across the world.
               </p>
               <p class="mb-n3 lead d-flex flex-wrap" style="line-height:2rem">
                 <a
                   href="https://webcaptioner.com"
                   class="btn btn-outline-secondary btn-sm mr-3 mb-3"
-                >webcaptioner.com</a>
+                  >webcaptioner.com</a
+                >
                 <span class="d-flex align-items-center mb-3">
                   <a
                     href="https://facebook.com/webcaptioner"
@@ -50,7 +66,7 @@
                     aria-label="Web Captioner on Facebook"
                     title="Web Captioner on Facebook"
                   >
-                    <fa :icon="['fab','facebook-square']" fixed-width />
+                    <fa :icon="['fab', 'facebook-square']" fixed-width />
                   </a>
                   <a
                     href="https://www.messenger.com/t/webcaptioner"
@@ -58,7 +74,7 @@
                     aria-label="Web Captioner on Facebook Messenger"
                     title="Web Captioner on Facebook Messenger"
                   >
-                    <fa :icon="['fab','facebook-messenger']" fixed-width />
+                    <fa :icon="['fab', 'facebook-messenger']" fixed-width />
                   </a>
                   <a
                     href="https://twitter.com/webcaptioner"
@@ -66,15 +82,21 @@
                     aria-label="Web Captioner on Twitter"
                     title="Web Captioner on Twitter"
                   >
-                    <fa :icon="['fab','twitter-square']" fixed-width />
+                    <fa :icon="['fab', 'twitter-square']" fixed-width />
                   </a>
                 </span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-xl-5 position-absolute pb-3 d-none d-lg-block" style="right:0">
-          <a href="https://webcaptioner.com" aria-label="Visit webcaptioner.com">
+        <div
+          class="col-lg-6 col-xl-5 position-absolute pb-3 d-none d-lg-block"
+          style="right:0"
+        >
+          <a
+            href="https://webcaptioner.com"
+            aria-label="Visit webcaptioner.com"
+          >
             <video
               loading="lazy"
               autoplay
@@ -85,7 +107,10 @@
               class="w-100 shadow border rounded bg-secondary"
               tabindex="-1"
             >
-              <source data-src="/video/web-captioner-loop.mp4" type="video/mp4" />
+              <source
+                data-src="/video/web-captioner-loop.mp4"
+                type="video/mp4"
+              />
             </video>
           </a>
         </div>

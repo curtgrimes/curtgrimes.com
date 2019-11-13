@@ -12,13 +12,25 @@
             class="pb-3 pb-lg-4 break-inside-avoid"
           >
             <h3 class="border-top pt-2 mb-4 mb-lg-3">
-              <fa v-if="technology.icon" :icon="technology.icon" size="sm" fixed-width />
-              {{technology.name}}
+              <fa
+                v-if="technology.icon"
+                :icon="technology.icon"
+                size="sm"
+                fixed-width
+              />
+              {{ technology.name }}
             </h3>
-            <ul class="list-unstyled font-italic column-count-2" style="line-height: 1.8rem">
-              <li v-for="(example, index) in technology.examples" :key="index" class="mb-2">
-                <a v-if="example.url" :href="example.url">{{example.name}}</a>
-                <template v-else>{{example}}</template>
+            <ul
+              class="list-unstyled font-italic column-count-2"
+              style="line-height: 1.8rem"
+            >
+              <li
+                v-for="(example, index) in technology.examples"
+                :key="index"
+                class="mb-2"
+              >
+                <a v-if="example.url" :href="example.url">{{ example.name }}</a>
+                <template v-else>{{ example.name }}</template>
               </li>
             </ul>
           </div>

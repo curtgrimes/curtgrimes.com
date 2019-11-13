@@ -137,7 +137,10 @@ export default {
     "@/assets/scss/app.scss",
     "@fortawesome/fontawesome-svg-core/styles.css"
   ],
-  plugins: ["~/plugins/fontawesome.js"],
+  plugins: [
+    "~/plugins/fontawesome.js",
+    "~/plugins/jsonld.js"
+  ],
   buildModules: [
     [
       "@nuxtjs/google-analytics",

@@ -2,52 +2,111 @@ module.exports = [{
     name: "Frontend",
     icon: ["far", "window-alt"],
     includeInPorfolioSkills: true,
-    examples: [
-      "HTML",
-      "JavaScript",
-      "CSS",
-      "Vue.js",
-      "Nuxt.js",
-      "SCSS",
-      "Bootstrap",
-      "jQuery",
-      "Hugo (static site generator)",
-      "Responsive web design",
-      "Web accessibility",
-      "Browser extensions and userscripts"
+    examples: [{
+        name: "HTML"
+      },
+      {
+        name: "JavaScript"
+      },
+      {
+        name: "CSS"
+      },
+      {
+        name: "Vue.js"
+      },
+      {
+        name: "Nuxt.js"
+      },
+      {
+        name: "SCSS"
+      },
+      {
+        name: "Bootstrap"
+      },
+      {
+        name: "jQuery"
+      },
+      {
+        name: "Hugo (static site generator)"
+      },
+      {
+        name: "Responsive web design"
+      },
+      {
+        name: "Web accessibility"
+      },
+      {
+        name: "Browser extensions and userscripts"
+      }
     ]
   },
   {
     name: "Backend",
     icon: ["far", "cloud"],
     includeInPorfolioSkills: true,
-    examples: [
-      "Node.js",
-      "Express",
-      "PHP",
-      "MySQL",
-      "Microsoft SQL Server",
-      "Docker",
-      "Redis",
-      "WebSockets",
-      "PowerShell and Bash scripting"
+    examples: [{
+        name: "Node.js"
+      },
+      {
+        name: "Express"
+      },
+      {
+        name: "PHP"
+      },
+      {
+        name: "MySQL"
+      },
+      {
+        name: "Microsoft SQL Server"
+      },
+      {
+        name: "Docker"
+      },
+      {
+        name: "Redis"
+      },
+      {
+        name: "WebSockets"
+      },
+      {
+        name: "PowerShell and Bash scripting"
+      }
     ]
   },
   {
     name: "Services",
     icon: ["far", "sparkles"],
     includeInPorfolioSkills: true,
-    examples: [
-      "Amazon Web Services",
-      "Firebase",
-      "Azure Bot Service",
-      "GitLab API",
-      "Dropbox API",
-      "Microsoft Graph API",
-      "Web Speech API",
-      "WordPress",
-      "MediaWiki",
-      "Stripe"
+    examples: [{
+        name: "Amazon Web Services"
+      },
+      {
+        name: "Firebase"
+      },
+      {
+        name: "Azure Bot Service"
+      },
+      {
+        name: "GitLab API"
+      },
+      {
+        name: "Dropbox API"
+      },
+      {
+        name: "Microsoft Graph API"
+      },
+      {
+        name: "Web Speech API"
+      },
+      {
+        name: "WordPress"
+      },
+      {
+        name: "MediaWiki"
+      },
+      {
+        name: "Stripe"
+      }
     ]
   },
   {
@@ -62,23 +121,35 @@ module.exports = [{
         name: "Home Assistant",
         url: "https://www.home-assistant.io/"
       },
-      "Google Glass"
+      {
+        name: "Google Glass"
+      }
     ]
   },
   {
     name: "Marketing",
-    examples: [
-      "Google Analytics",
-      "search engine optimization",
-      "social network presence building (Facebook, Twitter, YouTube)"
+    examples: [{
+        name: "Google Analytics"
+      },
+      {
+        name: "search engine optimization"
+      },
+      {
+        name: "social network presence building (Facebook, Twitter, YouTube)"
+      }
     ]
   },
   {
     name: "Design",
-    examples: [
-      "Adobe Illustrator",
-      "GIMP",
-      "Paint.NET"
+    examples: [{
+        name: "Adobe Illustrator"
+      },
+      {
+        name: "GIMP"
+      },
+      {
+        name: "Paint.NET"
+      }
     ]
   }
 ];
