@@ -162,6 +162,9 @@ export default {
   robots: {
     sitemap: BASE_URL + "/sitemap.xml"
   },
+  serverMiddleware: [
+    '~/server-middleware/redirects.js'
+  ],
   build: {
     extend(config, ctx) {}
   }
