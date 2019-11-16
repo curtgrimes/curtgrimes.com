@@ -26,6 +26,7 @@ export default {
         content: SITE_DESCRIPTION
       },
       {
+        hid: "theme-color",
         name: "theme-color",
         content: "#2ada7d"
       },
