@@ -1,23 +1,27 @@
 <template>
   <div class="bg-resume py-lg-6">
-    <div class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm px-lg-5 py-4">
-      <nuxt-link
-        to="/"
-        class="btn btn-link position-absolute text-secondary d-print-none resume-button px-4 py-3"
-        style="left:0;top:0"
+    <div class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm px-lg-5 pb-4">
+      <div ref="before-sticky-header" />
+      <div
+        class="mx-lg-n5 mx-n3 sticky-top resume-sticky-bg d-flex sticky-border-bottom"
+        :class="headerIsSticky ? 'is-sticky' : ''"
       >
-        <fa :icon="['far', 'arrow-left']" class="mr-2" />Home
-      </nuxt-link>
-      <button
-        type="button"
-        class="btn btn-link position-absolute text-secondary d-print-none resume-button px-4 py-3"
-        style="right:0;top:0"
-        @click="print()"
-      >
-        <fa :icon="['far', 'print']" class="mr-2" />Print
-      </button>
+        <nuxt-link
+          to="/"
+          class="btn btn-link text-secondary d-print-none resume-button px-4 py-3 mr-auto"
+        >
+          <fa :icon="['far', 'arrow-left']" class="mr-2" />Home
+        </nuxt-link>
+        <button
+          type="button"
+          class="btn btn-link text-secondary d-print-none resume-button px-4 py-3"
+          @click="print()"
+        >
+          <fa :icon="['far', 'print']" class="mr-2" />Print
+        </button>
+      </div>
       <div class="row">
-        <div class="my-print-0 my-4 col-pr-12 col-md-11 col-lg-12 mx-auto">
+        <div class="my-print-0 col-pr-12 col-md-11 col-lg-12 mx-auto">
           <h1 class="display-4 text-center mt-3 mt-sm-0">Curt Grimes</h1>
           <p class="lead text-center">
             Sycamore, IL
@@ -144,20 +148,41 @@ export default {
           name: "description",
           content:
             "The résumé for Curt Grimes, a full-stack web developer located in the northern Illinois area."
+        },
+        {
+          hid: "theme-color",
+          name: "theme-color",
+          content: "#ffffff"
         }
       ]
+    };
+  },
+  data() {
+    return {
+      headerIsSticky: false
     };
   },
   components: {
     ResumeHeading,
     ResumeItem
   },
+  mounted() {
+    this.initStickyTopObserver();
+  },
   methods: {
     print() {
       window.print();
     },
     getSkillsList(groupName) {
-      return skills.find(g => g.name === groupName).examples.map(e => e.name).join(", ");
+      return skills
+        .find(g => g.name === groupName)
+        .examples.map(e => e.name)
+        .join(", ");
+    },
+    initStickyTopObserver() {
+      new IntersectionObserver(records => {
+        this.headerIsSticky = records[0] && records[0].isIntersecting === false;
+      }).observe(this.$refs["before-sticky-header"]);
     }
   }
 };
