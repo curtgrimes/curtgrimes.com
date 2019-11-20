@@ -28,16 +28,22 @@
                   href="https://linkedin.com/in/curtgrimes"
                   class="text-secondary"
                 >
-                  <fa :icon="['fab', 'linkedin-in']" fixed-width class="mr-2" />
-                  curtgrimes
+                  <fa
+                    :icon="['fab', 'linkedin-in']"
+                    fixed-width
+                    class="mr-2"
+                  />curtgrimes
                 </a>
               </div>
               <div class="w-100 mb-3 mb-sm-1"></div>
               <div class="col-sm-3 font-weight-bold">GitHub</div>
               <div class="col-auto">
                 <a href="https://github.com/curtgrimes" class="text-secondary">
-                  <fa :icon="['fab', 'github']" fixed-width class="mr-2" />
-                  curtgrimes
+                  <fa
+                    :icon="['fab', 'github']"
+                    fixed-width
+                    class="mr-2"
+                  />curtgrimes
                 </a>
               </div>
             </div>
