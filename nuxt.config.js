@@ -13,7 +13,8 @@ export default {
       lang: "en"
     },
     title: SITE_NAME,
-    meta: [{
+    meta: [
+      {
         charset: "utf-8"
       },
       {
@@ -78,7 +79,8 @@ export default {
         content: "@curtgrimes"
       }
     ],
-    link: [{
+    link: [
+      {
         rel: "preconnect",
         href: "https://fonts.googleapis.com/",
         crossorigin: true
@@ -94,16 +96,19 @@ export default {
         crossorigin: true
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw'
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw"
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,.'
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,."
       },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Cousine&display=swap&text=WEBCAPTIONER'
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Cousine&display=swap&text=WEBCAPTIONER"
       },
       {
         rel: "apple-touch-icon",
@@ -138,10 +143,7 @@ export default {
     "@/assets/scss/app.scss",
     "@fortawesome/fontawesome-svg-core/styles.css"
   ],
-  plugins: [
-    "~/plugins/fontawesome.js",
-    "~/plugins/jsonld.js"
-  ],
+  plugins: ["~/plugins/fontawesome.js"],
   buildModules: [
     [
       "@nuxtjs/google-analytics",
@@ -166,9 +168,7 @@ export default {
   robots: {
     sitemap: BASE_URL + "/sitemap.xml"
   },
-  serverMiddleware: [
-    "~/server-middleware/redirects.js"
-  ],
+  serverMiddleware: ["~/server-middleware/redirects.js"],
   build: {
     extend(config, ctx) {}
   }
