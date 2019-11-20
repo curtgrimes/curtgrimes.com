@@ -5,9 +5,6 @@ const SITE_DESCRIPTION =
   "Curt Grimes is a full-stack web developer located in the northern Illinois area.";
 
 export default {
-  parallel: true, // https://nuxtjs.org/api/configuration-build#parallel
-  cache: true, // https://nuxtjs.org/api/configuration-build#cache
-  hardSource: true, // https://nuxtjs.org/api/configuration-build#hardsource
   env: {
     baseUrl: BASE_URL
   },
@@ -168,6 +165,9 @@ export default {
   },
   serverMiddleware: ["~/server-middleware/redirects.js"],
   build: {
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    parallel: true, // https://nuxtjs.org/api/configuration-build#parallel
+    cache: true, // https://nuxtjs.org/api/configuration-build#cache
+    hardSource: true, // https://nuxtjs.org/api/configuration-build#hardsource
   }
 };
