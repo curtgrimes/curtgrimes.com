@@ -18,7 +18,9 @@
           <!-- <div class="w-100"></div> -->
 
           <nav class="ml-md-1 mb-0">
-            <nuxt-link to="/resume" class="btn btn-outline-secondary">Résumé</nuxt-link>
+            <nuxt-link to="/resume" class="btn btn-outline-secondary"
+              >Résumé</nuxt-link
+            >
             <a href="#contact" class="btn btn-link text-secondary px-3">
               <span class="d-flex align-items-center">
                 <span class="flex-shrink-0">Contact Me</span>
@@ -32,9 +34,19 @@
         <!-- Use placeholder wrapper for image to preserve aspect ratio
         before image loads to prevent content shifting around as image loads. 
         Padding top is height / width * 100% of image.-->
-        <picture class="d-block position-relative h-0" style="padding-top: calc(956 / 900 * 100%)">
-          <source :srcset="require('~/assets/img/headshot.webp')" type="image/webp" />
-          <source :srcset="require('~/assets/img/headshot.png')" type="image/png" />
+        <picture
+          class="d-block position-relative h-0"
+          style="padding-top: calc(956 / 900 * 100%)"
+        >
+          <source
+            :srcset="require('~/assets/img/headshot.webp')"
+            type="image/webp"
+          />
+          <source
+            :srcset="require('~/assets/img/headshot.png')"
+            type="image/png"
+          />
+
           <img
             :src="require('~/assets/img/headshot.png')"
             class="position-absolute w-100 h-100"
@@ -46,4 +58,3 @@
     </div>
   </div>
 </template>
-

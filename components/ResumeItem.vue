@@ -7,7 +7,10 @@
       <span v-if="$slots.company" class="font-italic">
         <slot name="company"></slot>
       </span>
-      <span class="ml-auto d-md-block text-right text-muted" v-if="$slots.dates || $slots.location">
+      <span
+        class="ml-auto d-md-block text-right text-muted"
+        v-if="$slots.dates || $slots.location"
+      >
         <span
           class="resume-location d-md-block pl-2 pl-sm-0"
           style="white-space:nowrap"
@@ -15,7 +18,9 @@
         >
           <slot name="location"></slot>
         </span>
-        <span class="d-md-none align-top" v-if="$slots.dates && $slots.location">&middot;</span>
+        <span class="d-md-none align-top" v-if="$slots.dates && $slots.location"
+          >&middot;</span
+        >
         <span class="resume-dates d-md-block" v-if="$slots.dates">
           <slot name="dates"></slot>
         </span>
@@ -41,7 +46,9 @@
           >
             <slot name="location"></slot>
           </span>
-          <span class="d-md-none" v-if="$slots.dates && $slots.location">&middot;</span>
+          <span class="d-md-none" v-if="$slots.dates && $slots.location"
+            >&middot;</span
+          >
           <span class="resume-dates d-md-block" v-if="$slots.dates">
             <slot name="dates"></slot>
           </span>
