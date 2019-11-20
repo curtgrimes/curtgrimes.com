@@ -1,8 +1,10 @@
-export default [{
+export default [
+  {
     name: "Frontend",
     icon: ["far", "window-alt"],
     includeInPorfolioSkills: true,
-    examples: [{
+    examples: [
+      {
         name: "HTML"
       },
       {
@@ -44,7 +46,8 @@ export default [{
     name: "Backend",
     icon: ["far", "cloud"],
     includeInPorfolioSkills: true,
-    examples: [{
+    examples: [
+      {
         name: "Node.js"
       },
       {
@@ -69,6 +72,15 @@ export default [{
         name: "WebSockets"
       },
       {
+        name: "REST APIs"
+      },
+      {
+        name: "NGINX"
+      },
+      {
+        name: "Apache"
+      },
+      {
         name: "PowerShell and Bash scripting"
       }
     ]
@@ -77,8 +89,9 @@ export default [{
     name: "Services",
     icon: ["far", "sparkles"],
     includeInPorfolioSkills: true,
-    examples: [{
-        name: "Amazon Web Services"
+    examples: [
+      {
+        name: "Amazon Web Services (AWS)"
       },
       {
         name: "Firebase"
@@ -106,6 +119,9 @@ export default [{
       },
       {
         name: "Stripe"
+      },
+      {
+        name: "Git version control"
       }
     ]
   },
@@ -113,7 +129,8 @@ export default [{
     name: "Ask me about",
     icon: ["far", "comment-smile"],
     includeInPorfolioSkills: true,
-    examples: [{
+    examples: [
+      {
         name: "Stream Deck",
         url: "https://www.elgato.com/en/gaming/stream-deck"
       },
@@ -128,7 +145,8 @@ export default [{
   },
   {
     name: "Marketing",
-    examples: [{
+    examples: [
+      {
         name: "Google Analytics"
       },
       {
@@ -141,7 +159,8 @@ export default [{
   },
   {
     name: "Design",
-    examples: [{
+    examples: [
+      {
         name: "Adobe Illustrator"
       },
       {
