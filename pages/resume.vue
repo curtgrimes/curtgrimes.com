@@ -30,6 +30,10 @@
             <span class="d-none d-sm-inline">&middot;</span>
             <br class="d-sm-none" />
             <a href="mailto:curt@curtgrimes.com">curt@curtgrimes.com</a>
+            <span class="d-none d-print-inline">
+              &middot;
+              <a href="https://curtgrimes.com">curtgrimes.com</a>
+            </span>
           </p>
 
           <resume-heading>Experience</resume-heading>
