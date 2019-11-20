@@ -1,4 +1,4 @@
-module.exports = [{
+export default [{
     name: "Frontend",
     icon: ["far", "window-alt"],
     includeInPorfolioSkills: true,
