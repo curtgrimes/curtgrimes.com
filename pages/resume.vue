@@ -1,24 +1,12 @@
 <template>
   <div class="bg-resume py-lg-6">
-    <div
-      class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm px-lg-5 pb-4"
-    >
+    <div class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm px-lg-5 pb-4">
       <div ref="before-sticky-header" />
-      <div
-        class="mx-lg-n5 mx-n3 sticky-top resume-sticky-bg d-flex sticky-border-bottom"
-        :class="headerIsSticky ? 'is-sticky' : ''"
-      >
-        <nuxt-link
-          to="/"
-          class="btn btn-link text-secondary d-print-none resume-button px-4 py-3 mr-auto"
-        >
+      <div class="mx-lg-n5 mx-n3 sticky-top resume-sticky-bg d-flex sticky-border-bottom" :class="headerIsSticky ? 'is-sticky' : ''">
+        <nuxt-link to="/" class="btn btn-link text-secondary d-print-none resume-button px-4 py-3 mr-auto">
           <fa :icon="['far', 'arrow-left']" class="mr-2" />Home
         </nuxt-link>
-        <button
-          type="button"
-          class="btn btn-link text-secondary d-print-none resume-button px-4 py-3"
-          @click="print()"
-        >
+        <button type="button" class="btn btn-link text-secondary d-print-none resume-button px-4 py-3" @click="print()">
           <fa :icon="['far', 'print']" class="mr-2" />Print
         </button>
       </div>
@@ -26,9 +14,9 @@
         <div class="my-print-0 col-pr-12 col-md-11 col-lg-12 mx-auto">
           <h1 class="display-4 text-center mt-3 mt-sm-0">Curt Grimes</h1>
           <p class="lead text-center">
-            Sycamore, IL
-            <span class="d-none d-sm-inline">&middot;</span>
-            <br class="d-sm-none" />
+            <!-- Sycamore, IL -->
+            <!-- <span class="d-none d-sm-inline">&middot;</span> -->
+            <!-- <br class="d-sm-none" /> -->
             <a href="mailto:curt@curtgrimes.com">curt@curtgrimes.com</a>
             <span class="d-none d-print-inline">
               &middot;
@@ -39,9 +27,7 @@
           <resume-heading>Experience</resume-heading>
 
           <resume-item>
-            <template #title
-              >Assistant Director, Web and Digital Communications</template
-            >
+            <template #title>Assistant Director, Web and Digital Communications</template>
             <template #company>Northern Illinois University</template>
             <template #dates>Apr. 2019 &ndash; present</template>
             <template #location>DeKalb, IL</template>
