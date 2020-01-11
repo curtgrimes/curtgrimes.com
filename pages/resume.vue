@@ -29,7 +29,7 @@
           <resume-item>
             <template #title>Assistant Director, Web and Digital Communications</template>
             <template #company>Northern Illinois University</template>
-            <template #dates>Apr. 2019 &ndash; present</template>
+            <template #dates>Apr. 2019 &ndash; Jan. 2020</template>
             <template #location>DeKalb, IL</template>
             <p>
               Direct all aspects of the research, planning, development,
