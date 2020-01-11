@@ -3,8 +3,7 @@
     <hero-header />
     <bio />
     <technologies />
-    <featured-links />
-    <projects />
+    <!-- <featured-links /> -->
     <contact />
   </main>
 </template>
@@ -13,8 +12,7 @@
 import HeroHeader from "~/components/HeroHeader.vue";
 import Bio from "~/components/Bio.vue";
 import Technologies from "~/components/Technologies.vue";
-import FeaturedLinks from "~/components/FeaturedLinks.vue";
-import Projects from "~/components/Projects.vue";
+// import FeaturedLinks from "~/components/FeaturedLinks.vue";
 import Contact from "~/components/Contact.vue";
 import skills from "~/data/skills";
 
@@ -23,8 +21,7 @@ export default {
     HeroHeader,
     Bio,
     Technologies,
-    FeaturedLinks,
-    Projects,
+    // FeaturedLinks,
     Contact
   },
   head: {

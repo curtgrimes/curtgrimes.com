@@ -6,9 +6,7 @@
           <p>
             I am a full-stack web developer living in the northern Illinois
             area. Currently, I have been working a lot with
-            <em>JavaScript</em>, <em>Node.js</em> and <em>Vue</em>. My latest
-            project is <a href="#web-captioner">Web Captioner</a>, a
-            speech-to-text service.
+            <em>JavaScript</em>, <em>Node.js</em> and <em>Vue</em>.
           </p>
           <p class="mb-0">
             I am passionate about design that is intuitive and satisfying for my

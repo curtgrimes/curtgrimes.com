@@ -13,7 +13,8 @@ export default {
       lang: "en"
     },
     title: SITE_NAME,
-    meta: [{
+    meta: [
+      {
         charset: "utf-8"
       },
       {
@@ -78,7 +79,8 @@ export default {
         content: "@curtgrimes"
       }
     ],
-    link: [{
+    link: [
+      {
         rel: "preconnect",
         href: "https://fonts.googleapis.com/",
         crossorigin: true
@@ -95,15 +97,13 @@ export default {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw"
+        href:
+          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw"
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,."
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Cousine&display=swap&text=WEBCAPTIONER"
+        href:
+          "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzé-,."
       },
       {
         rel: "apple-touch-icon",
@@ -168,6 +168,6 @@ export default {
     extend(config, ctx) {},
     parallel: true, // https://nuxtjs.org/api/configuration-build#parallel
     cache: true, // https://nuxtjs.org/api/configuration-build#cache
-    hardSource: true, // https://nuxtjs.org/api/configuration-build#hardsource
+    hardSource: true // https://nuxtjs.org/api/configuration-build#hardsource
   }
 };
