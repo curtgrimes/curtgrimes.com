@@ -30,5 +30,7 @@
     "sass-loader": "^8.0.0",
     "url-loader": "^3.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7"
+  }
 }

@@ -164,6 +164,9 @@ export default {
   },
   serverMiddleware: ["~/server-middleware/redirects.js"],
   build: {
+    babel: {
+      plugins: ["@babel/plugin-proposal-optional-chaining"]
+    },
     extend(config, ctx) {},
     parallel: true, // https://nuxtjs.org/api/configuration-build#parallel
     cache: true, // https://nuxtjs.org/api/configuration-build#cache

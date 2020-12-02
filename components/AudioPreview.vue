@@ -85,24 +85,34 @@ export default {
 
     const seekBarOnMouseMove = event => {
       event.preventDefault(); // prevent dragging from selecting neighboring text
-      calculateNewSeekAfterClickDrag(event.clientX);
-    };
-
-    const seekBarOnMouseDown = event => {
-      calculateNewSeekAfterClickDrag(event.clientX);
-      document.addEventListener("mousemove", seekBarOnMouseMove);
-
-      document.addEventListener(
-        "mouseup",
-        () => {
-          document.removeEventListener("mousemove", seekBarOnMouseMove);
-          this.$refs.audio.play();
-        },
-        { once: true }
+      calculateNewSeekAfterClickDrag(
+        event.clientX || event.touches?.[0]?.clientX
       );
     };
 
+    const seekBarOnMouseDown = event => {
+      calculateNewSeekAfterClickDrag(
+        event.clientX || event.touches?.[0]?.clientX
+      );
+      document.addEventListener("mousemove", seekBarOnMouseMove, {
+        passive: false
+      });
+      document.addEventListener("touchmove", seekBarOnMouseMove, {
+        passive: false
+      });
+
+      const onMouseUp = () => {
+        document.removeEventListener("mousemove", seekBarOnMouseMove);
+        document.removeEventListener("touchmove", seekBarOnMouseMove);
+        this.$refs.audio.play();
+      };
+
+      document.addEventListener("mouseup", onMouseUp, { once: true });
+      document.addEventListener("touchend", onMouseUp, { once: true });
+    };
+
     this.$refs.seekBar.addEventListener("mousedown", seekBarOnMouseDown);
+    this.$refs.seekBar.addEventListener("touchstart", seekBarOnMouseDown);
     this.$refs.seekBar.addEventListener("dblclick", () => {
       this.$refs.audio.pause();
     });
