@@ -98,7 +98,7 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMSabcdehikmnorstuvw"
+          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMPSabcdeghikmnorstuvwy"
       },
       {
         rel: "stylesheet",
@@ -164,6 +164,9 @@ export default {
   },
   serverMiddleware: ["~/server-middleware/redirects.js"],
   build: {
+    babel: {
+      plugins: ["@babel/plugin-proposal-optional-chaining"]
+    },
     extend(config, ctx) {},
     parallel: true, // https://nuxtjs.org/api/configuration-build#parallel
     cache: true, // https://nuxtjs.org/api/configuration-build#cache

@@ -10,17 +10,6 @@
               Web developer
             </span>
           </h1>
-          <!-- <div class="w-100"></div> -->
-
-          <nav class="ml-md-1 mb-0">
-            <nuxt-link to="/resume" class="btn btn-outline-secondary">Résumé</nuxt-link>
-            <a href="#contact" class="btn btn-link text-secondary px-3">
-              <span class="d-flex align-items-center">
-                <span class="flex-shrink-0">Contact Me</span>
-                <fa icon="chevron-right" fixed-width />
-              </span>
-            </a>
-          </nav>
         </div>
       </div>
       <div class="col-9 col-md-5 col-headshot ml-md-n3" style="z-index:9">
