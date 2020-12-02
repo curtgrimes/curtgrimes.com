@@ -24,7 +24,7 @@ import {
   faPlayCircle,
   faPauseCircle,
   faProjectDiagram
-} from "./fontawesome-pro-regular";
+} from "@/assets/img/icons/fontawesome-pro-regular";
 
 // This is important, we are going to let Nuxt.js worry about the CSS
 config.autoAddCss = false;
