@@ -149,6 +149,11 @@ export default {
           content: "https://curtgrimes.com/music"
         },
         {
+          hid: "og:description",
+          property: "og:description",
+          content: "Listen to music by Curt Grimes."
+        },
+        {
           hid: "description",
           name: "description",
           content: "Music by Curt Grimes"
