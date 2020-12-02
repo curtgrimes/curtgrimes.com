@@ -87,7 +87,7 @@ export default [
   },
   {
     name: "Services",
-    icon: ["far", "sparkles"],
+    icon: ["far", "project-diagram"],
     includeInPorfolioSkills: true,
     examples: [
       {

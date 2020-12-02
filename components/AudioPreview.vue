@@ -44,8 +44,6 @@
 </template>
 
 <script>
-import throttle from "lodash.throttle";
-
 export default {
   props: {
     name: {
@@ -86,6 +84,7 @@ export default {
     };
 
     const seekBarOnMouseMove = event => {
+      event.preventDefault(); // prevent dragging from selecting neighboring text
       calculateNewSeekAfterClickDrag(event.clientX);
     };
 
@@ -104,6 +103,9 @@ export default {
     };
 
     this.$refs.seekBar.addEventListener("mousedown", seekBarOnMouseDown);
+    this.$refs.seekBar.addEventListener("dblclick", () => {
+      this.$refs.audio.pause();
+    });
   },
   methods: {
     loadedMetadata($event) {

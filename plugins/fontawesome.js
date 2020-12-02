@@ -14,16 +14,17 @@ import {
   faFacebookMessenger,
   faTwitterSquare
 } from "@fortawesome/free-brands-svg-icons";
+
 import {
   faWindowAlt,
   faCloud,
-  faSparkles,
   faCommentSmile,
   faPrint,
   faArrowLeft,
   faPlayCircle,
-  faPauseCircle
-} from "@fortawesome/pro-regular-svg-icons";
+  faPauseCircle,
+  faProjectDiagram
+} from "./fontawesome-pro-regular";
 
 // This is important, we are going to let Nuxt.js worry about the CSS
 config.autoAddCss = false;
@@ -34,7 +35,6 @@ library.add([
   faChevronRight,
   faWindowAlt,
   faCloud,
-  faSparkles,
   faCommentSmile,
   faGithub,
   faLinkedinIn,
@@ -47,7 +47,8 @@ library.add([
   faPrint,
   faArrowLeft,
   faPlayCircle,
-  faPauseCircle
+  faPauseCircle,
+  faProjectDiagram
 ]);
 
 // Register the component globally
