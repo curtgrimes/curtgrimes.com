@@ -13,7 +13,7 @@
     "analyze": "nuxt build --analyze",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "now-build": "apt-get install libpng-dev"
+    "vercel-build": "apt-get install libpng-dev"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
