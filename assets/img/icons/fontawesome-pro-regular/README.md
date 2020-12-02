@@ -1,26 +1,26 @@
-# @fortawesome/fontawesome-pro-regular - SVG with JavaScript version
+# @fortawesome/pro-regular-svg-icons - SVG with JavaScript version
 
 > "I came here to chew bubblegum and install Font Awesome 5 - and I'm all out of bubblegum"
 
-[![npm](https://img.shields.io/npm/v/@fortawesome/fontawesome-pro-regular.svg?style=flat-square)](https://www.npmjs.com/package/@fortawesome/fontawesome-pro-regular)
+[![npm](https://img.shields.io/npm/v/@fortawesome/pro-regular-svg-icons.svg?style=flat-square)](https://www.npmjs.com/package/@fortawesome/pro-regular-svg-icons)
 
 ## Installation
 
 ```
-$ npm i --save @fortawesome/fontawesome-pro-regular
+$ npm i --save @fortawesome/pro-regular-svg-icons
 ```
 
 Or
 
 ```
-$ yarn add @fortawesome/fontawesome-pro-regular
+$ yarn add @fortawesome/pro-regular-svg-icons
 ```
 
 ## Documentation
 
-Get started [here](https://fontawesome.com/get-started/svg-with-js). Continue your journey [here](https://fontawesome.com/how-to-use/svg-with-js).
+Get started [here](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started). Continue your journey [here](https://fontawesome.com/how-to-use/on-the-web/advanced).
 
-Or go straight to the [API documentation](https://fontawesome.com/how-to-use/font-awesome-api).
+Or go straight to the [API documentation](https://fontawesome.com/how-to-use/with-the-api).
 
 ## Issues and support
 

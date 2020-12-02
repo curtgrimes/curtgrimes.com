@@ -1,1 +1,29 @@
-module.exports = { prefix: 'far', iconName: 'plug', icon: [384, 512, [], "f1e6", "M360 144H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h8c0 80.208 59.02 146.628 136 158.208V512h48v-81.792c76.979-11.58 136-78 136-158.208h8c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zm-24 80h-32v48c0 61.898-50.092 112-112 112-61.898 0-112-50.092-112-112v-48H48v-32h288v32zm-72-96V24c0-13.255 10.745-24 24-24s24 10.745 24 24v104h-48zm-192 0V24C72 10.745 82.745 0 96 0s24 10.745 24 24v104H72z"] };
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'far';
+var iconName = 'plug';
+var width = 384;
+var height = 512;
+var ligatures = [];
+var unicode = 'f1e6';
+var svgPathData = 'M312,24a24,24,0,0,0-48,0v88h48ZM120,24a24,24,0,0,0-48,0v88h48ZM368,144H16A16,16,0,0,0,0,160v16a16,16,0,0,0,16,16H32v64c0,80.14,59.11,145.92,136,157.58V512h48V413.58C292.89,401.92,352,336.14,352,256V192h16a16,16,0,0,0,16-16V160A16,16,0,0,0,368,144ZM304,256a112,112,0,0,1-224,0V192H304Z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faPlug = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;

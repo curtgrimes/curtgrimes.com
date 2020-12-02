@@ -1,1 +1,29 @@
-module.exports = { prefix: 'far', iconName: 'italic', icon: [256, 512, [], "f033", "M89.42 80h40.484L62.006 432H16.763a12 12 0 0 0-11.771 9.666l-4.759 24C-1.238 473.086 4.439 480 12.004 480H161.82a12 12 0 0 0 11.771-9.666l4.759-24c1.471-7.42-4.206-14.334-11.771-14.334h-41.118L193.36 80h45.877a12 12 0 0 0 11.771-9.666l4.759-24C257.238 38.914 251.56 32 243.996 32H94.179a12 12 0 0 0-11.771 9.666l-4.759 24C76.178 73.086 81.856 80 89.42 80z"] };
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'far';
+var iconName = 'italic';
+var width = 320;
+var height = 512;
+var ligatures = [];
+var unicode = 'f033';
+var svgPathData = 'M320 48v16a16 16 0 0 1-16 16h-67l-88 352h59a16 16 0 0 1 16 16v16a16 16 0 0 1-16 16H16a16 16 0 0 1-16-16v-16a16 16 0 0 1 16-16h67l88-352h-59a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h192a16 16 0 0 1 16 16z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faItalic = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;

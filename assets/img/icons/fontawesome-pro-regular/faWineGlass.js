@@ -1,1 +1,29 @@
-module.exports = { prefix: 'far', iconName: 'wine-glass', icon: [288, 512, [], "f4e3", "M200 464h-32V349.4c72.7-12.4 126.3-79.5 119.4-156.7l-16-178.1C270.7 6.3 263.9 0 255.7 0H32.3c-8.2 0-15 6.3-15.7 14.6L.6 192.7C-6.3 269.9 47.3 337 120 349.4V464H88.1c-37.2 0-50 48-32 48h175.8c18.1 0 5.2-48-31.9-48zM61.1 48H227l7.2 80H53.9l7.2-80zm11.5 224c-18.5-20.6-27.4-47.3-24.9-75l1.9-21h188.8l1.9 21c2.5 27.8-6.4 54.4-24.9 75s-43.9 32-71.4 32-52.9-11.3-71.4-32z"] };
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'far';
+var iconName = 'wine-glass';
+var width = 288;
+var height = 512;
+var ligatures = [];
+var unicode = 'f4e3';
+var svgPathData = 'M216 464h-48V348.54c72.6-12.52 126.31-78.75 119.4-155.88L271.45 14.55C270.71 6.31 263.9 0 255.74 0H32.26c-8.15 0-14.97 6.31-15.7 14.55L.6 192.66C-6.31 269.79 47.4 336.03 120 348.54V464H72c-22.09 0-40 17.91-40 40 0 4.42 3.58 8 8 8h208c4.42 0 8-3.58 8-8 0-22.09-17.91-40-40-40zm-85.01-161.73c-51.16-7.1-87.28-52.88-82.58-105.33L61.75 48h164.5l13.34 148.94c4.7 52.45-31.42 98.23-82.58 105.33h-26.02z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faWineGlass = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;

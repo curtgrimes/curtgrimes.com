@@ -1,1 +1,29 @@
-module.exports = { prefix: 'far', iconName: 'weight', icon: [512, 512, [], "f496", "M448 64h-64.8C353.9 25.4 308.1 0 256 0s-97.9 25.4-127.2 64H64C28.7 64 0 92.7 0 128v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64zM256 48c61.9 0 112 50.1 112 112s-50.1 112-112 112-112-50.1-112-112S194.1 48 256 48zm208 400c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V128c0-8.8 7.2-16 16-16h40.2c-4.8 15.2-8.2 31.2-8.2 48 0 88.2 71.8 160 160 160s160-71.8 160-160c0-16.8-3.3-32.8-8.2-48H448c8.8 0 16 7.2 16 16v320zM256 240c17.7 0 32-14.3 32-32 0-8.1-3.3-15.2-8.2-20.8l23.4-70.1c6.7-20.1-23.6-30.2-30.4-10.1l-23.5 70.4C235 180.5 224 192.7 224 208c0 17.7 14.3 32 32 32z"] };
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'far';
+var iconName = 'weight';
+var width = 512;
+var height = 512;
+var ligatures = [];
+var unicode = 'f496';
+var svgPathData = 'M448 64h-64.81C353.95 25.38 308.07 0 256 0s-97.95 25.38-127.19 64H64C28.71 64 0 92.71 0 128v320c0 35.29 28.71 64 64 64h384c35.29 0 64-28.71 64-64V128c0-35.29-28.71-64-64-64zM256 48c61.86 0 112 50.14 112 112s-50.14 112-112 112-112-50.14-112-112S194.14 48 256 48zm208 400c0 8.84-7.16 16-16 16H64c-8.84 0-16-7.16-16-16V128c0-8.84 7.16-16 16-16h40.17C99.33 127.25 96 143.17 96 160c0 88.22 71.78 160 160 160s160-71.78 160-160c0-16.83-3.33-32.75-8.17-48H448c8.84 0 16 7.16 16 16v320zM256 240c17.67 0 32-14.33 32-32 0-8.06-3.25-15.22-8.18-20.85l23.36-70.09c6.66-20.08-23.63-30.2-30.38-10.12l-23.47 70.41C234.97 180.49 224 192.69 224 208c0 17.67 14.33 32 32 32z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faWeight = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
