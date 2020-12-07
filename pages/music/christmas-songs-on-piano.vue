@@ -12,31 +12,39 @@
         <div class="col-md-8">
           <h2 class="h3">Christmas Songs on Piano</h2>
           <p>Curt Grimes &middot; 2020</p>
-          <div v-if="false" class="font-italic mb-4">
+          <div class="font-italic mb-4">
             <a
+              v-if="false"
               href="#"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
+              target="_blank"
+              ><fa :icon="['fab', 'youtube']" /> YouTube</a
+            ><a
+              href="https://open.spotify.com/album/4poptTGcE2oZhoQzQhyVgF"
+              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
+              target="_blank"
             >
               <fa :icon="['fab', 'spotify']" /> Spotify </a
             ><a
-              href="#"
+              href="https://music.apple.com/us/album/christmas-songs-on-piano/1542899794"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
+              target="_blank"
               ><fa :icon="['fab', 'apple']" /> Apple Music</a
             ><a
-              href="#"
+              href="https://music.youtube.com/playlist?list=OLAK5uy_nP5KMBdj2AxnMrsMN93Jlz2nzs6nBw3wc"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
+              target="_blank"
               ><fa :icon="['fab', 'youtube']" /> YouTube Music</a
             ><a
-              href="#"
+              href="https://www.amazon.com/gp/product/B08PFVBJ64"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              ><fa :icon="['fab', 'amazon']" /> Amazon</a
+              target="_blank"
+              ><fa :icon="['fab', 'amazon']" /> Amazon Music</a
             ><a
+              v-if="false"
               href="#"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              ><fa :icon="['fab', 'youtube']" /> YouTube</a
-            ><a
-              href="#"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
+              target="_blank"
               ><img
                 src="@/assets/img/icons/pandora.svg"
                 alt=""
@@ -44,8 +52,10 @@
                 style="height:1rem;vertical-align:baseline"
               />Pandora</a
             ><a
+              v-if="false"
               href="#"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
+              target="_blank"
               ><fa :icon="['fab', 'deezer']" /> Deezer</a
             >
           </div>
