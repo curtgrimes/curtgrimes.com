@@ -14,8 +14,7 @@
           <p>Curt Grimes &middot; 2020</p>
           <div class="font-italic mb-4">
             <a
-              v-if="false"
-              href="#"
+              href="https://www.youtube.com/playlist?list=OLAK5uy_mBeuO9z8bGrWqNZ_ARDWybO_clSz9Pyoc"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
               target="_blank"
               ><fa :icon="['fab', 'youtube']" /> YouTube</a
@@ -41,8 +40,7 @@
               target="_blank"
               ><fa :icon="['fab', 'amazon']" /> Amazon Music</a
             ><a
-              v-if="false"
-              href="#"
+              href="https://www.pandora.com/artist/curt-grimes-holiday/christmas-songs-on-piano/ALrhbp97wxfnKqV"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
               target="_blank"
               ><img
@@ -52,8 +50,7 @@
                 style="height:1rem;vertical-align:baseline"
               />Pandora</a
             ><a
-              v-if="false"
-              href="#"
+              href="https://www.deezer.com/us/album/190484272"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
               target="_blank"
               ><fa :icon="['fab', 'deezer']" /> Deezer</a
