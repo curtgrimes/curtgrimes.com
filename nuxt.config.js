@@ -47,10 +47,12 @@ export default {
         content: BASE_URL
       },
       {
+        hid: "og:description",
         property: "og:description",
         content: SITE_DESCRIPTION
       },
       {
+        hid: "og:image",
         property: "og:image",
         content: BASE_URL + "/og-image.jpg"
       },

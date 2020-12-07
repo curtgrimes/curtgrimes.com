@@ -1,6 +1,10 @@
 <template>
   <div class="mb-4">
-    <div class="progress mb-2" style="height:0.5rem" ref="seekBar">
+    <div
+      class="progress mb-2"
+      style="height:0.5rem;background-color:rgba(255,255,255,.3)"
+      ref="seekBar"
+    >
       <div
         class="progress-bar"
         style="transition-duration:0s !important"
@@ -8,22 +12,24 @@
         aria-valuenow="0"
         aria-valuemin="0"
         aria-valuemax="100"
-        :style="{ width: playbackPercentage }"
+        :style="{ width: playbackPercentage, backgroundColor: '#fff' }"
       ></div>
     </div>
     <div class="d-flex">
       <button
-        class="btn btn-link d-flex align-items-center p-1 my-n1 text-secondary mr-auto audio-preview-play-button text-left"
+        class="btn btn-link d-flex align-items-center p-1 my-n1 mr-auto audio-preview-play-button text-left"
+        style="color:inherit"
         @click="$refs.audio.paused ? $refs.audio.play() : $refs.audio.pause()"
       >
         <fa
           :icon="playing ? ['far', 'pause-circle'] : ['far', 'play-circle']"
           aria-label="Play"
+          size="lg"
           class="mr-2"
         />
-        <h3 class="mb-0">{{ name }}</h3>
+        <h3 class="mb-0" style="padding-top:2px">{{ name }}</h3>
       </button>
-      <span class="text-muted small ml-2">{{ fullDuration }}</span>
+      <span class="text-lighter small ml-2">{{ fullDuration }}</span>
     </div>
     <audio
       controls

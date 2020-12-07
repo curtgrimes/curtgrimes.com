@@ -12,7 +12,12 @@ import {
   faLinkedinIn,
   faFacebookSquare,
   faFacebookMessenger,
-  faTwitterSquare
+  faTwitterSquare,
+  faSpotify,
+  faApple,
+  faYoutube,
+  faAmazon,
+  faDeezer
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -48,7 +53,12 @@ library.add([
   faArrowLeft,
   faPlayCircle,
   faPauseCircle,
-  faProjectDiagram
+  faProjectDiagram,
+  faSpotify,
+  faApple,
+  faYoutube,
+  faAmazon,
+  faDeezer
 ]);
 
 // Register the component globally
