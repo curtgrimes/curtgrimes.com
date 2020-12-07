@@ -12,7 +12,7 @@
         <div class="col-md-8">
           <h2 class="h3">Christmas Songs on Piano</h2>
           <p>Curt Grimes &middot; 2020</p>
-          <div class="font-italic mb-4">
+          <div v-if="false" class="font-italic mb-4">
             <a
               href="#"
               class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
