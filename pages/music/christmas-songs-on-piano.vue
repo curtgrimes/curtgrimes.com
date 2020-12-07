@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-8 col-md-4 mb-4 mb-md-0">
           <img
-            src="~/assets/img/music/christmas-songs-on-piano.jpg"
+            src="/music/christmas-songs-on-piano/christmas-songs-on-piano.jpg"
             class="w-100 shadow rounded-lg"
             alt="Christmas Songs on Piano by Curt Grimes"
           />
@@ -152,7 +152,8 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content: "/assets/img/music/christmas-songs-on-piano.jpg"
+          content:
+            "https://curtgrimes.com/music/christmas-songs-on-piano/christmas-songs-on-piano.jpg"
         },
         {
           hid: "og:site_name",
