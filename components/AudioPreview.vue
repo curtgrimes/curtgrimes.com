@@ -1,18 +1,14 @@
 <template>
   <div class="mb-4">
-    <div
-      class="progress mb-2"
-      style="height:0.5rem;background-color:rgba(255,255,255,.3)"
-      ref="seekBar"
-    >
+    <div class="progress audio-preview-progress mb-2" ref="seekBar">
       <div
         class="progress-bar"
-        style="transition-duration:0s !important"
+        style="transition-duration:0s !important;background-color:#fff"
         role="progressbar"
         aria-valuenow="0"
         aria-valuemin="0"
         aria-valuemax="100"
-        :style="{ width: playbackPercentage, backgroundColor: '#fff' }"
+        :style="{ width: playbackPercentage }"
       ></div>
     </div>
     <div class="d-flex">
@@ -153,3 +149,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.audio-preview-progress {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.3);
+  height: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  mix-blend-mode: overlay;
+}
+</style>

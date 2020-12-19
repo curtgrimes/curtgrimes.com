@@ -1,5 +1,8 @@
 <template>
-  <div class="music py-5" style="background: rgb(33 48 165);color: #fff;">
+  <div
+    class="music py-5"
+    style="background: linear-gradient(0deg, rgb(19 28 90), rgb(33 48 165));color: #fff;"
+  >
     <section class="container">
       <div class="row">
         <div class="col-sm-8 col-md-4 mb-4 mb-md-0">
@@ -12,49 +15,26 @@
         <div class="col-md-8">
           <h2 class="h3">Christmas Songs on Piano</h2>
           <p>Curt Grimes &middot; 2020</p>
-          <div class="font-italic mb-4">
-            <a
-              href="https://www.youtube.com/playlist?list=OLAK5uy_mBeuO9z8bGrWqNZ_ARDWybO_clSz9Pyoc"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              target="_blank"
-              ><fa :icon="['fab', 'youtube']" /> YouTube</a
-            ><a
-              href="https://open.spotify.com/album/4poptTGcE2oZhoQzQhyVgF"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              target="_blank"
+          <div class="font-italic mb-4 row no-gutters mx-n1 mx-sm-0">
+            <div
+              v-for="(store, storeIndex) in stores"
+              :key="storeIndex"
+              class="col-6 col-sm-auto px-1 px-sm-0 pr-sm-1 d-sm-inline-block"
             >
-              <fa :icon="['fab', 'spotify']" /> Spotify </a
-            ><a
-              href="https://music.apple.com/us/album/christmas-songs-on-piano/1542899794"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              target="_blank"
-              ><fa :icon="['fab', 'apple']" /> Apple Music</a
-            ><a
-              href="https://music.youtube.com/playlist?list=OLAK5uy_nP5KMBdj2AxnMrsMN93Jlz2nzs6nBw3wc"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              target="_blank"
-              ><fa :icon="['fab', 'youtube']" /> YouTube Music</a
-            ><a
-              href="https://www.amazon.com/gp/product/B08PFVBJ64"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              target="_blank"
-              ><fa :icon="['fab', 'amazon']" /> Amazon Music</a
-            ><a
-              href="https://www.pandora.com/artist/curt-grimes-holiday/christmas-songs-on-piano/ALrhbp97wxfnKqV"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              target="_blank"
-              ><img
-                src="@/assets/img/icons/pandora.svg"
-                alt=""
-                class="mr-1"
-                style="height:1rem;vertical-align:baseline"
-              />Pandora</a
-            ><a
-              href="https://www.deezer.com/us/album/190484272"
-              class="mr-1 mb-1 d-inline-block btn btn-light btn-sm pt-2"
-              target="_blank"
-              ><fa :icon="['fab', 'deezer']" /> Deezer</a
-            >
+              <a
+                :href="store.url"
+                class="mb-1 d-block d-sm-inline-block btn btn-light btn-sm pt-2"
+                target="_blank"
+                ><fa v-if="store.icon" :icon="store.icon" /><img
+                  v-else-if="store.iconImgSrc"
+                  :src="store.iconImgSrc"
+                  alt=""
+                  class="mr-1"
+                  style="height:.95rem;vertical-align:baseline"
+                />
+                {{ store.name }}</a
+              >
+            </div>
           </div>
           <audio-preview
             name="The First Noel"
@@ -194,6 +174,54 @@ export default {
   },
   components: {
     AudioPreview
-  }
+  },
+  data: () => ({
+    stores: [
+      {
+        name: "YouTube",
+        url:
+          "https://www.youtube.com/playlist?list=OLAK5uy_mBeuO9z8bGrWqNZ_ARDWybO_clSz9Pyoc",
+        icon: ["fab", "youtube"]
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/album/4poptTGcE2oZhoQzQhyVgF",
+        icon: ["fab", "spotify"]
+      },
+      {
+        name: "Apple Music",
+        url:
+          "https://music.apple.com/us/album/christmas-songs-on-piano/1542899794",
+        icon: ["fab", "apple"]
+      },
+      {
+        name: "YouTube Music",
+        url:
+          "https://music.youtube.com/playlist?list=OLAK5uy_nP5KMBdj2AxnMrsMN93Jlz2nzs6nBw3wc",
+        icon: ["fab", "youtube"]
+      },
+      {
+        name: "Amazon",
+        url: "https://www.amazon.com/gp/product/B08PFVBJ64",
+        icon: ["fab", "amazon"]
+      },
+      {
+        name: "Amazon Music",
+        url: "https://music.amazon.com/albums/B08PFVBJ64",
+        icon: ["fab", "amazon"]
+      },
+      {
+        name: "Pandora",
+        url:
+          "https://www.pandora.com/artist/curt-grimes-holiday/christmas-songs-on-piano/ALrhbp97wxfnKqV",
+        iconImgSrc: require("@/assets/img/icons/pandora.svg")
+      },
+      {
+        name: "Deezer",
+        url: "https://www.deezer.com/us/album/190484272",
+        icon: ["fab", "deezer"]
+      }
+    ]
+  })
 };
 </script>
