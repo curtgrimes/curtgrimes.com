@@ -1,8 +1,8 @@
 # Curt Grimes Portfolio Website
 
-This is the source code for my [Nuxt.js](https://nuxtjs.org/)-based porfolio website. See it live at https://curtgrimes.com.
+This is the source code for my [Nuxt.js](https://nuxtjs.org/)-based portfolio website. See it live at [https://curtgrimes.com](https://curtgrimes.com).
 
-In production, I deploy this website to [ZEIT](https://zeit.co) using the [@nuxtjs/now-builder](https://nuxtjs.org/faq/now-deployment/) module.
+In production, I deploy this website to [Vercel](https://vercel.com/) using the [@nuxtjs/vercel-builder](https://nuxtjs.org/docs/2.x/deployment/vercel-deployment) package.
 
 ## Development
 
