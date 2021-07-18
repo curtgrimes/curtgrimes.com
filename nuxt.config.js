@@ -1,8 +1,9 @@
 const BASE_URL = "https://curtgrimes.com";
-const SITE_NAME = "Curt Grimes - Web Developer - Northern Illinois";
-const SITE_NAME_SHORT = "Curt Grimes - Web Developer";
+const SITE_NAME =
+  "Curt Grimes - Full-Stack Software Engineer - Northern Illinois";
+const SITE_NAME_SHORT = "Curt Grimes - Full-Stack Software Engineer";
 const SITE_DESCRIPTION =
-  "Curt Grimes is a full-stack web developer located in the northern Illinois area.";
+  "Curt Grimes is a full-stack software engineer located in the northern Illinois area.";
 
 export default {
   env: {
@@ -29,7 +30,7 @@ export default {
       {
         hid: "theme-color",
         name: "theme-color",
-        content: "#2ada7d"
+        content: "#1eb8e5"
       },
       {
         hid: "og:title",
@@ -100,28 +101,16 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.ABCFGIMPSabcdeghikmnorstuvwy"
+          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.'ABCFGIMPSabcdeghijklmnorstuvwy"
       },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,900"
       },
       {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        href: "/apple-touch-icon.png"
-      },
-      {
         rel: "icon",
-        type: "image/png",
-        sizes: "32x32",
-        href: "/favicon-32x32.png"
-      },
-      {
-        rel: "icon",
-        type: "image/png",
-        sizes: "16x16",
-        href: "/favicon-16x16.png"
+        type: "image/svg+xml",
+        href: "/favicon.svg"
       },
       {
         rel: "manifest",
@@ -130,7 +119,7 @@ export default {
       {
         rel: "mask-icon",
         href: "/safari-pinned-tab.svg",
-        color: "#2ada7d"
+        color: "#1eb8e5"
       }
     ]
   },
@@ -164,14 +153,5 @@ export default {
   robots: {
     sitemap: BASE_URL + "/sitemap.xml"
   },
-  serverMiddleware: ["~/server-middleware/redirects.js"],
-  build: {
-    babel: {
-      plugins: ["@babel/plugin-proposal-optional-chaining"]
-    },
-    extend(config, ctx) {},
-    parallel: true, // https://nuxtjs.org/api/configuration-build#parallel
-    cache: true, // https://nuxtjs.org/api/configuration-build#cache
-    hardSource: true // https://nuxtjs.org/api/configuration-build#hardsource
-  }
+  serverMiddleware: ["~/server-middleware/redirects.js"]
 };

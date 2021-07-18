@@ -1,12 +1,24 @@
 <template>
   <div class="bg-resume py-lg-6">
-    <div class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm px-lg-5 pb-4">
+    <div
+      class="resume bg-white col-lg-9 col-xl-8 mx-auto shadow-sm px-lg-5 pb-4"
+    >
       <div ref="before-sticky-header" />
-      <div class="mx-lg-n5 mx-n3 sticky-top resume-sticky-bg d-flex sticky-border-bottom" :class="headerIsSticky ? 'is-sticky' : ''">
-        <nuxt-link to="/" class="btn btn-link text-secondary d-print-none resume-button px-4 py-3 mr-auto">
+      <div
+        class="mx-lg-n5 mx-n3 sticky-top resume-sticky-bg d-flex sticky-border-bottom"
+        :class="headerIsSticky ? 'is-sticky' : ''"
+      >
+        <nuxt-link
+          to="/"
+          class="btn btn-link text-secondary d-print-none resume-button px-4 py-3 mr-auto"
+        >
           <fa :icon="['far', 'arrow-left']" class="mr-2" />Home
         </nuxt-link>
-        <button type="button" class="btn btn-link text-secondary d-print-none resume-button px-4 py-3" @click="print()">
+        <button
+          type="button"
+          class="btn btn-link text-secondary d-print-none resume-button px-4 py-3"
+          @click="print()"
+        >
           <fa :icon="['far', 'print']" class="mr-2" />Print
         </button>
       </div>
@@ -14,7 +26,7 @@
         <div class="my-print-0 col-pr-12 col-md-11 col-lg-12 mx-auto">
           <h1 class="display-4 text-center mt-3 mt-sm-0">Curt Grimes</h1>
           <p class="lead text-center">
-            <!-- Sycamore, IL -->
+            Chicago, IL<br />
             <!-- <span class="d-none d-sm-inline">&middot;</span> -->
             <!-- <br class="d-sm-none" /> -->
             <a href="mailto:curt@curtgrimes.com">curt@curtgrimes.com</a>
@@ -27,53 +39,75 @@
           <resume-heading>Experience</resume-heading>
 
           <resume-item>
-            <template #title>Assistant Director, Web and Digital Communications</template>
+            <template #title>Front-End Software Engineer</template>
+            <template #company>Nokia</template>
+            <template #dates>Jan. 2020 &ndash; Present</template>
+            <template #location>Naperville, IL</template>
+            <p>
+              Work in a small team to architect, design and rapidly prototype
+              complex, highly interactive GUI solutions that integrate frontend
+              UI design along with the backend data engines in the 5G and
+              internet of things (IoT) domains.
+            </p>
+            <ul class="pl-3">
+              <li>
+                Use Vue, React, Node.js, JavaScript, CSS3, HTML5, Mapbox, and
+                Ionic Framework to implement highly interactive user interfaces
+                for the web and mobile devices.
+              </li>
+              <li>
+                Demonstrate good understanding of cloud/container based
+                applications with Kubernetes, Helm, and Docker.
+              </li>
+              <li>
+                Perform distributed application development, debugging,
+                troubleshooting and abstract problem-solving.
+              </li>
+              <li>
+                Design and implement vector graphics elements of cutting-edge
+                user interfaces.
+              </li>
+            </ul>
+          </resume-item>
+
+          <resume-item>
+            <template #title
+              >Assistant Director, Web and Digital Communications</template
+            >
             <template #company>Northern Illinois University</template>
             <template #dates>Apr. 2019 &ndash; Jan. 2020</template>
             <template #location>DeKalb, IL</template>
             <p>
-              Direct all aspects of the research, planning, development,
+              Directed all aspects of the research, planning, development,
               documentation, implementation and support of existing and new web
               sites and other departmental applications for Housing and
-              Residential Services; direct all aspects of creating, producing,
-              and distributing electronic and/or print communications; and lead
+              Residential Services; directed all aspects of creating, producing,
+              and distributing electronic and/or print communications; lead
               social media activities.
             </p>
             <ul class="pl-3">
               <li>
-                Design and maintain the departmental web presence using HTML,
-                JavaScript, CSS, and Vue.
+                Designed and maintained the departmental web presence using
+                HTML, JavaScript, CSS, and Vue.
               </li>
               <li>
-                Develop and support applications written using technologies like
-                PHP, HTML, JavaScript, CSS, jQuery, JSON, and REST APIs.
+                Developed and supported applications written using technologies
+                like PHP, HTML, JavaScript, CSS, jQuery, JSON, and REST APIs.
               </li>
               <li>
-                Recommend modifications or modify the departmental software
-                applications to meet user needs.
+                Recommended modifications to departmental software applications
+                to meet user needs.
               </li>
               <li>
-                Work with software versioning and revision control system,
-                GitLab.
-              </li>
-              <li>
-                Develop training materials and technical documentation for
+                Developed training materials and technical documentation for
                 existing and new applications.
               </li>
               <li>
-                Oversee the development, editing, and publishing of department
-                publications including digital materials, multi-media projects,
+                Oversaw the development, editing, and publishing of department
+                publications including digital materials, multimedia projects,
                 applicable print materials, and web pages for various audiences
                 including prospective students, residents, parents, and
                 university staff.
-              </li>
-              <li>
-                Identify promotional opportunities and utilize our social media
-                presence to communicate those opportunities.
-              </li>
-              <li>
-                Hire, supervise and evaluate student staff which includes
-                graphic designers and social media content creator staff.
               </li>
             </ul>
           </resume-item>
@@ -95,8 +129,7 @@
               </li>
               <li>Established programming techniques and procedures.</li>
               <li>
-                Recommended modifications or modify third party software to meet
-                user needs.
+                Recommended third-party software to meet user needs.
               </li>
               <li>
                 Oversaw the development, editing, and publishing of a
@@ -110,10 +143,6 @@
                 existing and new applications.
               </li>
               <li>Hired, trained, and evaluated student technical staff.</li>
-              <li>
-                Researched IT solutions applicable to the university housing
-                domain.
-              </li>
             </ul>
           </resume-item>
 
@@ -147,28 +176,12 @@
           <resume-heading>Skills and Software</resume-heading>
 
           <resume-item>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <strong>Frontend:</strong>
-                {{ getSkillsList("Frontend") }}
-              </li>
-              <li class="mb-2">
-                <strong>Backend:</strong>
-                {{ getSkillsList("Backend") }}
-              </li>
-              <li class="mb-2">
-                <strong>Services:</strong>
-                {{ getSkillsList("Services") }}
-              </li>
-              <li class="mb-2">
-                <strong>Marketing:</strong>
-                {{ getSkillsList("Marketing") }}
-              </li>
-              <li class="mb-2">
-                <strong>Design:</strong>
-                {{ getSkillsList("Design") }}
-              </li>
-            </ul>
+            <div class="small font-italic">
+              React, Vue, Node.js, Sass, Tailwindcss, Jest, Docker, Bootstrap,
+              Next.js, Nuxt.js, Express.js, PHP, MySQL, Redis, WebSockets,
+              Amazon Web Services, Web Speech API, Firebase, Mapbox, D3, Ionic
+              Framework, Hugo, HTML5, CSS3, jQuery, WordPress
+            </div>
           </resume-item>
         </div>
       </div>
@@ -179,12 +192,11 @@
 <script>
 import ResumeHeading from "~/components/ResumeHeading";
 import ResumeItem from "~/components/ResumeItem";
-import skills from "~/data/skills";
 
 export default {
   head() {
     return {
-      title: "Résumé - Curt Grimes - Web Developer",
+      title: "Curt Grimes - Full-Stack Software Engineer - Résumé",
       bodyAttrs: {
         class: "bg-light"
       },
@@ -192,7 +204,7 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "Résumé - Curt Grimes - Web Developer"
+          content: "Curt Grimes - Full-Stack Software Engineer"
         },
         {
           hid: "og:url",
@@ -203,7 +215,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "The résumé for Curt Grimes, a full-stack web developer located in the northern Illinois area."
+            "The résumé for Curt Grimes, a full-stack software engineer located in the northern Illinois area."
         },
         {
           hid: "theme-color",
@@ -228,12 +240,6 @@ export default {
   methods: {
     print() {
       window.print();
-    },
-    getSkillsList(groupName) {
-      return skills
-        .find(g => g.name === groupName)
-        .examples.map(e => e.name)
-        .join(", ");
     },
     initStickyTopObserver() {
       new IntersectionObserver(records => {

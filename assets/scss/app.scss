@@ -1,7 +1,7 @@
 $headings-font-family: "DM Serif Text", serif;
 
 $theme-colors: (
-  "primary": #2ada7d,
+  "primary": #1eb8e5,
   "secondary": #222,
   "light": #e0e0e0
 );
@@ -21,7 +21,7 @@ $btn-border-radius-sm: $border-radius;
 $h1-font-size: $font-size-base * 3.5;
 $h2-font-size: $font-size-base * 2.3;
 $input-btn-font-size: $font-size-base * 0.9;
-$link-color: #004dff;
+$link-color: #cd5334;
 
 $input-btn-padding-y: 0.75rem;
 $input-btn-padding-x: 1.5rem;
@@ -103,22 +103,33 @@ $breadcrumb-padding-y: $spacer;
   padding: 0.4em 0.4em 0.3em 0.4em;
 }
 
-.bio-border-top {
-  border-top: 1px solid #ddd;
-}
-
 @include media-breakpoint-up(lg) {
   .column-count-lg-2 {
     column-count: 2;
   }
 }
 
-.column-count-2 {
-  column-count: 2;
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.column-gap-1 {
-  column-gap: 3rem;
+@include media-breakpoint-up(sm) {
+  .d-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .d-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .d-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .break-inside-avoid {
