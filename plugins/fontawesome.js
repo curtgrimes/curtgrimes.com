@@ -17,7 +17,12 @@ import {
   faApple,
   faYoutube,
   faAmazon,
-  faDeezer
+  faDeezer,
+  faReact,
+  faVuejs,
+  faNode,
+  faSass,
+  faDocker
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -58,7 +63,12 @@ library.add([
   faApple,
   faYoutube,
   faAmazon,
-  faDeezer
+  faDeezer,
+  faReact,
+  faVuejs,
+  faNode,
+  faSass,
+  faDocker
 ]);
 
 // Register the component globally

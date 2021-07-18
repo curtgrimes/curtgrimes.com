@@ -5,7 +5,39 @@
         class="rounded rounded-xs-only-none rounded bg-white position-relative"
         style="top:-3rem;margin-bottom:-3rem;z-index:11"
       >
+        <div class="row">
+          <div
+            class="col-md-9 mx-auto lead px-5 pt-4 px-sm-5 pb-0 bio-border-top"
+          >
+            <p>
+              I am a full-stack software engineer. I work a lot with
+              <em>React</em>, <em>Vue</em>, and <em>Node.js</em>.
+            </p>
+            <p class="mb-0">
+              I am passionate about design that is intuitive and satisfying for
+              users. It's important to use the right tool for the job and
+              engineer solutions that are maintainable and robust.
+            </p>
+          </div>
+        </div>
         <nav class="d-sm-flex justify-content-center p-4">
+          <a
+            href="https://github.com/curtgrimes"
+            class="px-4 pb-3 pb-sm-0 d-block text-center"
+          >
+            <fa :icon="['fab', 'github']" fixed-width size="lg" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/curtgrimes/"
+            class="px-4 pb-3 pb-sm-0 d-block text-center"
+          >
+            <fa
+              :icon="['fab', 'linkedin-in']"
+              fixed-width
+              size="lg"
+              alt="LinkedIn"
+            />
+          </a>
           <nuxt-link to="/resume" class="px-4 pb-3 pb-sm-0 d-block text-center">
             Résumé
           </nuxt-link>
@@ -13,25 +45,9 @@
             Music
           </nuxt-link>
           <a href="#contact" class="px-4 d-block text-center">
-            Contact Me
+            Contact
           </a>
         </nav>
-        <div class="row">
-          <div
-            class="col-md-9 mx-auto lead px-5 pb-4 px-sm-5 pb-md-5 pt-4 bio-border-top"
-          >
-            <p>
-              I am a full-stack web developer. Currently, I have been working a
-              lot with
-              <em>JavaScript</em>, <em>Node.js</em>, and <em>Vue</em>.
-            </p>
-            <p class="mb-0">
-              I am passionate about design that is intuitive and satisfying for
-              my users. I think a lot about using the right tool for the job and
-              writing software that is maintainable and robust.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>

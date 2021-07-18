@@ -4,33 +4,26 @@
   "description": "Curt Grimes portfolio website",
   "author": "Curt Grimes",
   "private": true,
-  "engines": {
-    "node": "^10"
-  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "analyze": "nuxt build --analyze",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "vercel-build": "apt-get install libpng-dev"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
     "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "bootstrap": "^4.5.3",
-    "node-sass": "^5.0.0",
-    "nuxt": "^2.14.9",
+    "node-sass": "^6.0.1",
+    "nuxt": "^2.15.7",
     "nuxt-purgecss": "^1.0.0",
-    "sass-loader": "^10.1.0",
+    "sass-loader": "^10.2.0",
     "url-loader": "^4.1.1"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.12.7"
   }
 }
