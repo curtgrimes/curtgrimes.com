@@ -9,7 +9,7 @@
             Curt Grimes
             <span class="sr-only">-</span>
             <span
-              class="lead ml-md-1 mb-4 d-block mt-3 font-italic font-sans-serif text-secondary"
+              class="lead ml-md-1 d-block mt-3 font-italic font-sans-serif text-secondary"
             >
               Full-stack software engineer
             </span>
