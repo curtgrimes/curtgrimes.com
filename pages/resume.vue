@@ -23,9 +23,14 @@
         </button>
       </div>
 
-      <h1 class="display-4 text-center mt-3 mt-sm-0">Curt Grimes</h1>
+      <h1 class="display-4 text-center mt-3 mt-sm-0">
+        Curt Grimes
+      </h1>
       <p class="lead text-center">
-        Chicago, IL<br />
+        <span v-if="$route.query.phone" class="d-block">{{
+          $route.query.phone
+        }}</span>
+        <span class="d-block">Chicago, IL</span>
         <!-- <span class="d-none d-sm-inline">&middot;</span> -->
         <!-- <br class="d-sm-none" /> -->
         <a href="mailto:curt@curtgrimes.com" class="no-print-url"
