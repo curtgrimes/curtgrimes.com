@@ -30,7 +30,9 @@
         <span v-if="$route.query.phone" class="d-block">{{
           $route.query.phone
         }}</span>
-        <span class="d-block">Chicago, IL</span>
+        <span class="d-block">{{
+          $route.query.location || "Chicago, IL"
+        }}</span>
         <!-- <span class="d-none d-sm-inline">&middot;</span> -->
         <!-- <br class="d-sm-none" /> -->
         <a href="mailto:curt@curtgrimes.com" class="no-print-url"
