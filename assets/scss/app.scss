@@ -200,8 +200,8 @@ $breadcrumb-padding-y: $spacer;
     font-size: 1.5rem;
     font-style: italic;
     border-bottom: 1px solid map-get($theme-colors, "light");
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.1rem;
   }
 
   h3 {

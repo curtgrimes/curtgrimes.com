@@ -1,7 +1,7 @@
 <template>
   <div class="row no-gutters mb-3">
     <div
-      class="col-pr-12 d-none d-md-block col-md-3 col-xl-2 small text-right pr-4"
+      class="col-pr-2 d-none d-md-block col-md-2 col-xl-2 small text-right pr-4"
       v-if="$slots.dates || $slots.company || $slots.location"
     >
       <span v-if="$slots.company" class="font-italic">
@@ -26,7 +26,7 @@
         </span>
       </span>
     </div>
-    <div class="col-pr-12 col-md-9 col-xl-10 ml-auto">
+    <div class="col-pr-10 col-md-10 col-xl-10 ml-auto">
       <h3 v-if="$slots.title" class="mb-1 mb-md-2">
         <slot name="title"></slot>
       </h3>
