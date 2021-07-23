@@ -1,14 +1,14 @@
 <template>
   <div class="row no-gutters mb-3">
     <div
-      class="col-pr-2 d-none d-md-block col-md-2 col-xl-2 small text-right pr-4"
+      class="col-pr-2 d-print-block d-none d-md-block col-md-2 col-xl-2 small text-right pr-4"
       v-if="$slots.dates || $slots.company || $slots.location"
     >
-      <span v-if="$slots.company" class="font-italic">
+      <span v-if="$slots.company" class="font-italic d-print-block">
         <slot name="company"></slot>
       </span>
       <span
-        class="ml-auto d-md-block text-right text-muted"
+        class="ml-auto d-md-block text-right text-muted d-print-block"
         v-if="$slots.dates || $slots.location"
       >
         <span
@@ -18,10 +18,12 @@
         >
           <slot name="location"></slot>
         </span>
-        <span class="d-md-none align-top" v-if="$slots.dates && $slots.location"
+        <span
+          class="d-print-none d-md-none align-top"
+          v-if="$slots.dates && $slots.location"
           >&middot;</span
         >
-        <span class="resume-dates d-md-block" v-if="$slots.dates">
+        <span class="resume-dates d-md-block d-print-block" v-if="$slots.dates">
           <slot name="dates"></slot>
         </span>
       </span>
@@ -30,7 +32,9 @@
       <h3 v-if="$slots.title" class="mb-1 mb-md-2">
         <slot name="title"></slot>
       </h3>
-      <div class="d-flex d-md-none small mb-1 flex-wrap flex-sm-nowrap">
+      <div
+        class="d-print-none d-flex d-md-none small mb-1 flex-wrap flex-sm-nowrap"
+      >
         <span v-if="$slots.company" class="font-italic">
           <slot name="company"></slot>
         </span>

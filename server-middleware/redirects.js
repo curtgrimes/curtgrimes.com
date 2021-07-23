@@ -21,6 +21,11 @@ const redirects = [
   {
     from: "/works/where-to-eat/",
     to: "/"
+  },
+  {
+    from: "/gitlab-fargate",
+    to:
+      "https://webcaptioner.com/blog/2017/12/deploy-from-gitlab-to-aws-fargate/"
   }
 ];
 
