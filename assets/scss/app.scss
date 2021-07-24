@@ -219,6 +219,11 @@ $breadcrumb-padding-y: $spacer;
     margin-bottom: 0.5rem;
   }
 
+  a,
+  a:visited {
+    color: $body-color;
+  }
+
   .resume-dates,
   .resume-location {
     font-style: italic;
@@ -241,11 +246,9 @@ $breadcrumb-padding-y: $spacer;
   @media print {
     a:not(.no-print-url) {
       text-decoration: none;
-      color: $body-color;
     }
 
     a:not(.no-print-url)::after {
-      color: $link-color;
       content: "(" attr(href) ")";
       text-decoration: underline;
       padding-left: 0.25rem;
