@@ -208,10 +208,9 @@
         <template #dates>Aug. 2013 &ndash; May 2016</template>
         <template #location>DeKalb, IL</template>
         <p>
-          Coursework: Systems Design and Analysis, Database Concepts, Computer
-          Networks, Android Mobile Device Programming
+          Relevant coursework: Systems Design and Analysis, Database Concepts,
+          Computer Networks, Android Mobile Device Programming
         </p>
-        <p>GPA 3.80 / 4.00</p>
       </resume-item>
 
       <resume-item>
@@ -220,10 +219,10 @@
         <template #dates>Aug. 2011 &ndash; May 2013</template>
         <template #location>DeKalb, IL</template>
         <p>
-          Coursework: Software Engineering, Data Structures and Algorithm
-          Analysis in C++, Unix System, Databases, iOS Mobile Device Programming
+          Relevant coursework: Software Engineering, Data Structures and
+          Algorithm Analysis in C++, Unix System, Databases, iOS Mobile Device
+          Programming
         </p>
-        <p>GPA 3.95 / 4.00</p>
       </resume-item>
 
       <resume-heading>Skills and Software</resume-heading>
