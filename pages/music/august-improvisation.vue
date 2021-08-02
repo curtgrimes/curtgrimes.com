@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="row">
-      <div class="col-sm-8 mx-auto">
+      <div class="col-lg-8 mx-auto">
         <iframe
           frameborder="0"
           scrolling="no"
