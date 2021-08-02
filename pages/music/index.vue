@@ -1,20 +1,71 @@
 <template>
   <div class="container mb-6 music">
     <div class="row">
-      <div class="col-sm-8 col-md-4 mx-auto">
-        <nuxt-link to="/music/christmas-songs-on-piano" class="text-dark">
+      <div
+        class="col-sm-8 col-md-4 mx-auto mb-5"
+        v-for="album in albums"
+        :key="album.url"
+      >
+        <nuxt-link :to="album.url" class="text-dark">
           <img
-            src="/music/christmas-songs-on-piano/christmas-songs-on-piano.jpg"
+            :src="album.art"
             class="w-100 shadow rounded-lg mb-3"
-            alt="Christmas Songs on Piano by Curt Grimes"
+            :alt="album.name"
           />
-          <h3>Christmas Songs on Piano (2020)</h3></nuxt-link
-        >
+          <div class="d-flex align-items-center align-items-sm-start mb-n1">
+            <h3 class="mb-0">
+              {{ album.name }}
+            </h3>
+            <span
+              v-if="album.single"
+              class="badge badge-secondary ml-2 ml-sm-auto p-1"
+            >
+              Single
+            </span>
+          </div>
+          <span
+            class="small text-decoration-none d-inline-block"
+            style="opacity:.5"
+            >{{ album.year }}</span
+          >
+        </nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    albums: [
+      {
+        name: "Christmas Songs on Piano",
+        url: "/music/christmas-songs-on-piano",
+        art: "/music/christmas-songs-on-piano/christmas-songs-on-piano.jpg",
+        year: 2020
+      },
+      {
+        name: "Sands of July",
+        url: "/music/sands-of-july",
+        art: "/music/sands-of-july/sands-of-july.jpg",
+        single: true,
+        year: 2021
+      },
+      {
+        name: "August Improvisation",
+        url: "/music/august-improvisation",
+        art: "/music/august-improvisation/august-improvisation.jpg",
+        single: true,
+        year: 2021
+      }
+    ]
+  })
+};
 </script>
+
+<style lang="scss" scoped>
+.badge {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+</style>
