@@ -6,7 +6,7 @@
         v-for="album in albums"
         :key="album.url"
       >
-        <nuxt-link :to="album.url" class="text-dark">
+        <nuxt-link :to="album.url" class="text-dark stretched-link">
           <img
             :src="album.art"
             class="w-100 shadow rounded-lg mb-3"
