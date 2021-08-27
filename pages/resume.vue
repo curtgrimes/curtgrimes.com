@@ -51,7 +51,7 @@
       <resume-item>
         <template #title>Front-End Software Engineer</template>
         <template #company>Nokia</template>
-        <template #dates>Jan. 2020 &ndash; Present</template>
+        <template #dates>Jan. 2020 &ndash; Aug. 2021</template>
         <template #location>Naperville, IL</template>
         <p>
           Work in a small team to architect, design and rapidly prototype
