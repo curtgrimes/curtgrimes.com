@@ -57,6 +57,13 @@ export default {
         art: "/music/august-improvisation/august-improvisation.jpg",
         single: true,
         year: 2021
+      },
+      {
+        name: "In Space",
+        url: "/music/in-space",
+        art: "/music/in-space/in-space.jpg",
+        single: true,
+        year: 2022
       }
     ]
   })
