@@ -64,6 +64,13 @@ export default {
         art: "/music/in-space/in-space.jpg",
         single: true,
         year: 2022
+      },
+      {
+        name: "Thank You for Your Company",
+        url: "/music/thank-you-for-your-company",
+        art: "/music/thank-you-for-your-company/thank-you-for-your-company.jpg",
+        single: true,
+        year: 2022
       }
     ]
   })
