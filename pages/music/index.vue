@@ -22,6 +22,12 @@
             >
               Single
             </span>
+            <span
+              v-if="album.cover"
+              class="badge badge-secondary ml-2 ml-sm-auto p-1"
+            >
+              Cover
+            </span>
           </div>
           <span
             class="small text-decoration-none d-inline-block"
@@ -70,6 +76,13 @@ export default {
         url: "/music/thank-you-for-your-company",
         art: "/music/thank-you-for-your-company/thank-you-for-your-company.jpg",
         single: true,
+        year: 2022
+      },
+      {
+        name: "Angel Island Zone (Sonic 3 & Knuckles)",
+        url: "/music/angel-island-zone",
+        art: "/music/angel-island-zone/angel-island-zone.jpg",
+        cover: true,
         year: 2022
       }
     ]

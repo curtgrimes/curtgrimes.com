@@ -101,7 +101,7 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap&text=.'ABCFGIJMPSabcdefghijklmnoprstuvwy"
+          "https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap"
       },
       {
         rel: "stylesheet",
