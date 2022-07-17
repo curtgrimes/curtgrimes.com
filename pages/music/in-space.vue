@@ -11,7 +11,7 @@
           height="500"
           type="text/html"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          src="https://www.youtube.com/embed/eJDHeBX77jM?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"
+          src="https://www.youtube.com/embed/OcrqdvK9tW4?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"
         ></iframe>
         <div class="text-center mt-3 mb-5">
           <h2 class="h3">In Space</h2>
@@ -29,11 +29,11 @@
 export default {
   scrollToTop: true,
   meta: {
-    title: "August Improvisation"
+    title: "In Space"
   },
   head() {
     return {
-      title: "August Improvisation - Curt Grimes",
+      title: "In Space - Curt Grimes",
       bodyAttrs: {
         class: "bg-white"
       },
@@ -41,7 +41,7 @@ export default {
         {
           hid: "og:title",
           property: "og:title",
-          content: "August Improvisation"
+          content: "In Space"
         },
         {
           hid: "og:type",
@@ -51,8 +51,7 @@ export default {
         {
           hid: "og:image",
           property: "og:image",
-          content:
-            "https://curtgrimes.com/music/august-improvisation/august-improvisation.jpg"
+          content: "https://curtgrimes.com/music/in-space/in-space.jpg"
         },
         {
           hid: "og:site_name",
@@ -62,17 +61,17 @@ export default {
         {
           hid: "og:url",
           property: "og:url",
-          content: "https://curtgrimes.com/music/august-improvisation"
+          content: "https://curtgrimes.com/music/in-space"
         },
         {
           hid: "og:description",
           property: "og:description",
-          content: "August Improvisation, a single by Curt Grimes."
+          content: "In Space, a single by Curt Grimes."
         },
         {
           hid: "description",
           name: "description",
-          content: "August Improvisation, a single by Curt Grimes."
+          content: "In Space, a single by Curt Grimes."
         },
         {
           hid: "theme-color",
