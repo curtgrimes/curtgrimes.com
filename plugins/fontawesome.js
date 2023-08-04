@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
-  faLinkedinIn,
   faFacebookSquare,
   faFacebookMessenger,
   faTwitterSquare,
@@ -47,7 +46,6 @@ library.add([
   faCloud,
   faCommentSmile,
   faGithub,
-  faLinkedinIn,
   faPaperPlane,
   faFacebookSquare,
   faFacebookMessenger,

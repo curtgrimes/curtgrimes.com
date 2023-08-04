@@ -33,25 +33,15 @@ export default {
           contactPoint: [
             {
               "@type": "ContactPoint",
-              contactType: "LinkedIn",
-              identifier: "curtgrimes",
-              url: "https://linkedin.com/in/curtgrimes"
-            },
-            {
-              "@type": "ContactPoint",
               contactType: "GitHub",
               identifier: "curtgrimes",
               url: "https://github.com/curtgrimes"
             }
           ],
-          email: "curt@curtgrimes.com",
           image: "https://curtgrimes.com/og-image.jpg",
           jobTitle: "Web Developer",
           url: "https://curtgrimes.com",
-          sameAs: [
-            "https://github.com/curtgrimes",
-            "https://linkedin.com/in/curtgrimes"
-          ]
+          sameAs: ["https://github.com/curtgrimes"]
         }
       }
     ]

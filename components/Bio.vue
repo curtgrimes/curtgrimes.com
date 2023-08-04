@@ -25,18 +25,13 @@
             href="https://github.com/curtgrimes"
             class="px-4 pb-3 pb-sm-0 d-block text-center"
           >
-            <fa :icon="['fab', 'github']" fixed-width size="lg" alt="GitHub" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/curtgrimes/"
-            class="px-4 pb-3 pb-sm-0 d-block text-center"
-          >
             <fa
-              :icon="['fab', 'linkedin-in']"
+              :icon="['fab', 'github']"
               fixed-width
               size="lg"
-              alt="LinkedIn"
-            />
+              alt="GitHub"
+              class="mr-1"
+            />GitHub
           </a>
           <nuxt-link to="/resume" class="px-4 pb-3 pb-sm-0 d-block text-center">
             Résumé
@@ -44,9 +39,6 @@
           <nuxt-link to="/music" class="px-4 pb-3 pb-sm-0 d-block text-center">
             Music
           </nuxt-link>
-          <a href="#contact" class="px-4 d-block text-center">
-            Contact
-          </a>
         </nav>
       </div>
     </div>
